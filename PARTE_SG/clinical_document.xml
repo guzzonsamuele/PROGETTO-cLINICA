@@ -19,8 +19,29 @@ N: livello normale
 -->
 <language code="it-IT"/>
 <versionNumber value="{{versione}}" />
-<recordTarget/>
+<recordTarget>
+    <patientRole>
+        <id root="" extension="" assigningAuthorityName=""/>
+        <addr use="H">
+            <country>{{nazione}}<country/>
+            <state>{{regione}}<state/>
+            <conty>{{provincia}}<county/>
+            <city>{{citta}}<city/>
+            <postalCode>{{codice_postale}}<postalCode/>
+            <streetAdressLine>{{indirizzo_completo}}<streetAdressLine/>
+        <addr/>
+        <telecom use ="HP" value="mailto:"{{email}}/>
+        <telecom use ="MC" value ="tel:"{{numero_di_telefono}} />
+        <patient>
+            <name>
+                <family>{{Cognome}}<family/>
+                <given>{{Nome}}<given/>
+            <name/>
+            <administrativeGenderCode code={{sesso(M/F/UN)}} codeSystem="2.16.840.1.113883.5.1 " codeSystemName="HL7 AdministrativeGender" displayName={{Sesso}} />
+            <birthTime value={{data_nascita}}>
+        <patient/>
     <patientRole/>
+<recordTarget/>
     <component>
         <structuredBody>
            ...

@@ -1,0 +1,1393 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.63.1.23" effectiveDate="2025-05-16T12:38:10" statusCode="draft" lastModifiedDate="2025-07-06T17:48:43" prefix="hl7itig-" transactionId="2.16.840.1.113883.3.1937.777.63.4.40" transactionEffectiveDate="2025-06-03T00:00:00" transactionStatusCode="draft" transactionType="stationary" transactionIddisplay="hl7itig-transaction-40" templateId="2.16.840.1.113883.2.9.10.1.16.1.1" templateEffectiveDate="2025-05-16T12:23:34" shortName="referto_di_televisita" iddisplay="hl7itig-dataset-23" url="http://develop.art-decor.org/decor/services/" ident="hl7itig-"><!--
+ This is a view of the transaction "Referto di Televisita" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="it-IT" lastTranslated="2025-06-03T14:02:41">Referto di Televisita</name>
+    <desc language="it-IT"/>
+    <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3843" effectiveDate="2025-05-16T12:45:16" statusCode="draft" lastModifiedDate="2025-07-06T17:48:43" type="group" minimumMultiplicity="1" maximumMultiplicity="1" conformance="M" isMandatory="true" iddisplay="hl7itig-dataelement-3843" shortName="header">
+        <implementation shortName="header" markdown="Header"/>
+        <name language="it-IT" lastTranslated="2025-05-16T12:45:27">Header</name>
+        <desc language="it-IT" lastTranslated="2025-05-16T12:45:27">Header</desc>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3898" effectiveDate="2025-05-19T14:09:39" statusCode="draft" lastModifiedDate="2025-07-06T17:48:43" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3898" shortName="anagrafica_del_documento">
+            <implementation shortName="anagrafica_del_documento" markdown="Anagrafica del Documento"/>
+            <name language="it-IT" lastTranslated="2025-05-19T14:10:10">Anagrafica del Documento</name>
+            <desc language="it-IT" lastTranslated="2025-05-19T14:10:10">Anagrafica del Documento</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3900" effectiveDate="2025-05-19T14:13:26" statusCode="draft" lastModifiedDate="2025-05-19T14:13:46" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3900" shortName="dominio_che_ha_definito_le_regole_applicate_a_questo_documento_cda">
+                <implementation shortName="dominio_che_ha_definito_le_regole_applicate_a_questo_documento_cda" markdown="Dominio che ha definito le regole applicate a questo documento CDA"/>
+                <name language="it-IT" lastTranslated="2025-05-19T14:13:46">Dominio che ha definito le regole applicate a questo documento CDA</name>
+                <desc language="it-IT" lastTranslated="2025-05-19T14:13:46">Dominio che ha definito le regole applicate a questo documento CDA</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3901" effectiveDate="2025-05-19T14:17:21" statusCode="cancelled" lastModifiedDate="2025-05-19T14:26:25" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3901" shortName="dominio_che_ha_definito_le_regole_applicate_a_questo_documento_cda_3901">
+                <implementation shortName="dominio_che_ha_definito_le_regole_applicate_a_questo_documento_cda_3901" markdown="Dominio che ha definito le regole applicate a questo documento CDA"/>
+                <name language="it-IT" lastTranslated="2025-05-19T14:25:37">Dominio che ha definito le regole applicate a questo documento CDA</name>
+                <desc language="it-IT" lastTranslated="2025-05-19T14:25:37">Dominio che ha definito le regole applicate a questo documento CDA</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.3901.20250519141721.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3902" effectiveDate="2025-05-19T14:27:18" statusCode="draft" lastModifiedDate="2025-05-19T14:31:30" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3902" shortName="specifiche_hl7cda2_associate_al_documento">
+                <implementation shortName="specifiche_hl7cda2_associate_al_documento" markdown="Specifiche HL7-CDA2 associate al documento"/>
+                <name language="it-IT" lastTranslated="2025-05-19T14:27:59">Specifiche HL7-CDA2 associate al documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-19T14:27:59">Specifiche HL7-CDA2 associate al documento</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3927" effectiveDate="2025-05-20T09:48:30" statusCode="draft" lastModifiedDate="2025-05-20T09:49:09" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3927" shortName="identificativo_template_utilizzato">
+                <implementation shortName="identificativo_template_utilizzato" markdown="Identificativo template utilizzato"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:49:09">Identificativo template utilizzato</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:49:09">Identificativo template utilizzato</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3899" effectiveDate="2025-05-19T14:10:35" statusCode="draft" lastModifiedDate="2025-07-06T17:47:48" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3899" shortName="identificativo_del_documento">
+                <implementation shortName="identificativo_del_documento" markdown="Identificativo del Documento"/>
+                <name language="it-IT" lastTranslated="2025-05-19T14:11:19">Identificativo del Documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-19T14:11:19">
+                            <p>Identificativo del Documento</p>
+                        </desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3928" effectiveDate="2025-05-20T09:50:20" statusCode="draft" lastModifiedDate="2025-05-20T09:50:39" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3928" shortName="codice_tipologia_del_documento">
+                <implementation shortName="codice_tipologia_del_documento" markdown="Codice tipologia del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:50:39">Codice tipologia del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:50:39">Codice tipologia del documento</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.3928.20250520095020.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3929" effectiveDate="2025-05-20T09:50:52" statusCode="draft" lastModifiedDate="2025-05-20T09:51:07" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3929" shortName="ulteriore_codifica">
+                <implementation shortName="ulteriore_codifica" markdown="Ulteriore codifica"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:51:07">Ulteriore codifica</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:51:07">Ulteriore codifica</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.3929.20250520095052.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3930" effectiveDate="2025-05-20T09:51:20" statusCode="draft" lastModifiedDate="2025-05-20T09:51:31" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3930" shortName="titolo_del_documento">
+                <implementation shortName="titolo_del_documento" markdown="Titolo del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:51:31">Titolo del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:51:31">Titolo del documento</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3931" effectiveDate="2025-05-20T09:51:41" statusCode="draft" lastModifiedDate="2025-07-06T17:48:43" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3931" shortName="dataora_di_creazione_del_documento">
+                <implementation shortName="dataora_di_creazione_del_documento" markdown="Data/ora di creazione del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:52:04">Data/ora di creazione del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:52:04">Data/ora di creazione del documento</desc>
+                <valueDomain type="datetime"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3932" effectiveDate="2025-05-20T09:52:14" statusCode="draft" lastModifiedDate="2025-05-20T09:52:33" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3932" shortName="livello_di_riservatezza_del_documento">
+                <implementation shortName="livello_di_riservatezza_del_documento" markdown="Livello di riservatezza del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:52:33">Livello di riservatezza del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:52:33">Livello di riservatezza del documento</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.3932.20250520095214.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3933" effectiveDate="2025-05-20T09:52:41" statusCode="draft" lastModifiedDate="2025-05-20T09:52:57" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3933" shortName="lingua_del_documento">
+                <implementation shortName="lingua_del_documento" markdown="Lingua del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:52:57">Lingua del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:52:57">Lingua del documento</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.3933.20250520095241.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3935" effectiveDate="2025-05-20T09:53:17" statusCode="draft" lastModifiedDate="2025-05-20T09:54:02" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3935" shortName="gestione_versionamento_documento">
+                <implementation shortName="gestione_versionamento_documento" markdown="Gestione versionamento documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:54:02">Gestione versionamento documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:54:02">Gestione versionamento documento</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3903" effectiveDate="2025-05-19T14:32:38" statusCode="draft" lastModifiedDate="2025-05-20T10:03:55" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3903" shortName="anagrafica_del_paziente">
+            <implementation shortName="anagrafica_del_paziente" markdown="Anagrafica del paziente"/>
+            <name language="it-IT" lastTranslated="2025-05-19T14:33:13">Anagrafica del paziente</name>
+            <desc language="it-IT" lastTranslated="2025-05-19T14:33:13">Anagrafica del paziente</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3940" effectiveDate="2025-05-20T09:55:07" statusCode="draft" lastModifiedDate="2025-05-20T09:55:19" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3940" shortName="chiave_identificativa_dellassistito">
+                <implementation shortName="chiave_identificativa_dellassistito" markdown="Chiave identificativa dell'assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:55:19">Chiave identificativa dell'assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:55:19">Chiave identificativa dell'assistito</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3941" effectiveDate="2025-05-20T09:55:41" statusCode="draft" lastModifiedDate="2025-05-20T09:57:56" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3941" shortName="indirizzo_assistito">
+                <implementation shortName="indirizzo_assistito" markdown="Indirizzo assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:55:58">Indirizzo assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:55:58">Indirizzo assistito</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3942" effectiveDate="2025-05-20T09:56:31" statusCode="draft" lastModifiedDate="2025-05-20T09:56:39" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3942" shortName="stato">
+                    <implementation shortName="stato" markdown="Stato"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:56:39">Stato</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:56:39">Stato</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3943" effectiveDate="2025-05-20T09:56:43" statusCode="draft" lastModifiedDate="2025-05-20T09:56:50" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3943" shortName="regione">
+                    <implementation shortName="regione" markdown="Regione"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:56:50">Regione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:56:50">Regione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3944" effectiveDate="2025-05-20T09:56:53" statusCode="draft" lastModifiedDate="2025-05-20T09:57:01" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3944" shortName="provincia">
+                    <implementation shortName="provincia" markdown="Provincia"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:57:01">Provincia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:57:01">Provincia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3945" effectiveDate="2025-05-20T09:57:15" statusCode="draft" lastModifiedDate="2025-05-20T09:57:22" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3945" shortName="citta">
+                    <implementation shortName="citta" markdown="Città"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:57:22">Città</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:57:22">Città</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3947" effectiveDate="2025-05-20T09:57:26" statusCode="draft" lastModifiedDate="2025-05-20T09:57:36" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3947" shortName="viapiazza">
+                    <implementation shortName="viapiazza" markdown="Via/Piazza"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:57:36">Via/Piazza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:57:36">Via/Piazza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3948" effectiveDate="2025-05-20T09:57:44" statusCode="draft" lastModifiedDate="2025-05-20T09:57:56" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3948" shortName="cap">
+                    <implementation shortName="cap" markdown="CAP"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:57:56">CAP</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:57:56">CAP</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3950" effectiveDate="2025-05-20T09:58:15" statusCode="draft" lastModifiedDate="2025-05-20T09:58:30" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3950" shortName="recapiti_di_contatto_assistito">
+                <implementation shortName="recapiti_di_contatto_assistito" markdown="Recapiti di contatto assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:58:30">Recapiti di contatto assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:58:30">Recapiti di contatto assistito</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3951" effectiveDate="2025-05-20T09:58:41" statusCode="draft" lastModifiedDate="2025-05-20T09:59:50" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3951" shortName="nominativo_dellassistito">
+                <implementation shortName="nominativo_dellassistito" markdown="Nominativo dell'assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T09:59:05">Nominativo dell'assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T09:59:05">Nominativo dell'assistito</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3952" effectiveDate="2025-05-20T09:59:18" statusCode="draft" lastModifiedDate="2025-05-20T09:59:37" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3952" shortName="cognome_dellassistito">
+                    <implementation shortName="cognome_dellassistito" markdown="Cognome dell'assistito"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:59:37">Cognome dell'assistito</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:59:37">Cognome dell'assistito</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3954" effectiveDate="2025-05-20T09:59:41" statusCode="draft" lastModifiedDate="2025-05-20T09:59:50" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3954" shortName="nome_dellassistito">
+                    <implementation shortName="nome_dellassistito" markdown="Nome dell'assistito"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T09:59:50">Nome dell'assistito</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T09:59:50">Nome dell'assistito</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3955" effectiveDate="2025-05-20T10:00:08" statusCode="draft" lastModifiedDate="2025-05-20T10:00:20" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3955" shortName="sesso_dellassistito">
+                <implementation shortName="sesso_dellassistito" markdown="Sesso dell'assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:00:20">Sesso dell'assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:00:20">Sesso dell'assistito</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.3955.20250520100008.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3957" effectiveDate="2025-05-20T10:00:35" statusCode="draft" lastModifiedDate="2025-05-20T10:01:00" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3957" shortName="data_di_nascita_dellassistito">
+                <implementation shortName="data_di_nascita_dellassistito" markdown="Data di nascita dell'assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:01:00">Data di nascita dell'assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:01:00">Data di nascita dell'assistito</desc>
+                <valueDomain type="date"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3958" effectiveDate="2025-05-20T10:01:38" statusCode="draft" lastModifiedDate="2025-05-20T10:02:00" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3958" shortName="entita_che_rappresenta_la_patria_potesta_genitoriale">
+                <implementation shortName="entita_che_rappresenta_la_patria_potesta_genitoriale" markdown="Entità che rappresenta la patria potestà genitoriale"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:02:00">Entità che rappresenta la patria potestà genitoriale</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:02:00">Entità che rappresenta la patria potestà genitoriale</desc>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3959" effectiveDate="2025-05-20T10:02:34" statusCode="draft" lastModifiedDate="2025-05-20T10:03:33" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3959" shortName="luogo_di_nascita">
+                <implementation shortName="luogo_di_nascita" markdown="Luogo di nascita"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:03:33">Luogo di nascita</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:03:33">Luogo di nascita</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3960" effectiveDate="2025-05-20T10:03:46" statusCode="draft" lastModifiedDate="2025-05-20T10:03:55" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3960" shortName="organizzazione_associata_allassistito">
+                <implementation shortName="organizzazione_associata_allassistito" markdown="Organizzazione associata all'assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:03:55">Organizzazione associata all'assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:03:55">Organizzazione associata all'assistito</desc>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3962" effectiveDate="2025-05-20T10:05:08" statusCode="draft" lastModifiedDate="2025-05-26T10:04:36" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3962" shortName="anagrafica_dellautore">
+            <implementation shortName="anagrafica_dellautore" markdown="Anagrafica dell'autore"/>
+            <name language="it-IT" lastTranslated="2025-05-20T10:05:18">Anagrafica dell'autore</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T10:05:18">Anagrafica dell'autore</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3963" effectiveDate="2025-05-20T10:05:30" statusCode="draft" lastModifiedDate="2025-05-26T10:04:36" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3963" shortName="ora_di_produzione_del_documento">
+                <implementation shortName="ora_di_produzione_del_documento" markdown="Ora di produzione del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:05:46">Ora di produzione del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:05:46">Ora di produzione del documento</desc>
+                <valueDomain type="datetime"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3964" effectiveDate="2025-05-20T10:06:02" statusCode="draft" lastModifiedDate="2025-05-20T10:06:29" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3964" shortName="identificativo_autore">
+                <implementation shortName="identificativo_autore" markdown="Identificativo autore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:06:17">Identificativo autore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:06:17">Identificativo autore</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3965" effectiveDate="2025-05-20T10:06:43" statusCode="draft" lastModifiedDate="2025-05-20T10:08:26" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3965" shortName="indirizzo">
+                <implementation shortName="indirizzo" markdown="Indirizzo"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:07:06">Indirizzo</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:07:06">Indirizzo</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3966" effectiveDate="2025-05-20T10:07:11" statusCode="draft" lastModifiedDate="2025-05-20T10:07:20" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3966" shortName="stato">
+                    <implementation shortName="stato" markdown="Stato"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:07:20">Stato</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:07:20">Stato</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3967" effectiveDate="2025-05-20T10:07:27" statusCode="draft" lastModifiedDate="2025-05-20T10:07:35" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3967" shortName="regione">
+                    <implementation shortName="regione" markdown="Regione"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:07:35">Regione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:07:35">Regione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3968" effectiveDate="2025-05-20T10:07:39" statusCode="draft" lastModifiedDate="2025-05-20T10:07:47" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3968" shortName="provincia">
+                    <implementation shortName="provincia" markdown="Provincia"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:07:47">Provincia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:07:47">Provincia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3969" effectiveDate="2025-05-20T10:07:55" statusCode="draft" lastModifiedDate="2025-05-20T10:08:04" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3969" shortName="citta">
+                    <implementation shortName="citta" markdown="Città"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:08:04">Città</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:08:04">Città</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3970" effectiveDate="2025-05-20T10:08:14" statusCode="draft" lastModifiedDate="2025-05-20T10:08:26" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3970" shortName="viapiazza">
+                    <implementation shortName="viapiazza" markdown="Via/Piazza"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:08:26">Via/Piazza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:08:26">Via/Piazza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3971" effectiveDate="2025-05-20T10:08:44" statusCode="draft" lastModifiedDate="2025-05-20T10:08:50" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3971" shortName="recapiti_telefonici_ed_email_dellautore">
+                <implementation shortName="recapiti_telefonici_ed_email_dellautore" markdown="Recapiti telefonici ed email dell'autore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:08:50">Recapiti telefonici ed email dell'autore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:08:50">Recapiti telefonici ed email dell'autore</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3972" effectiveDate="2025-05-20T10:09:00" statusCode="draft" lastModifiedDate="2025-05-20T10:09:44" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3972" shortName="nominativo_autore">
+                <implementation shortName="nominativo_autore" markdown="Nominativo autore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:09:13">Nominativo autore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:09:13">Nominativo autore</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3973" effectiveDate="2025-05-20T10:09:27" statusCode="draft" lastModifiedDate="2025-05-20T10:09:35" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3973" shortName="cognome">
+                    <implementation shortName="cognome" markdown="Cognome"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:09:35">Cognome</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:09:35">Cognome</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3974" effectiveDate="2025-05-20T10:09:38" statusCode="draft" lastModifiedDate="2025-05-20T10:09:44" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3974" shortName="nome">
+                    <implementation shortName="nome" markdown="Nome"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:09:44">Nome</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:09:44">Nome</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3975" effectiveDate="2025-05-20T10:10:02" statusCode="draft" lastModifiedDate="2025-05-20T10:10:42" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3975" shortName="organizzazione_autore">
+                <implementation shortName="organizzazione_autore" markdown="Organizzazione autore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:10:12">Organizzazione autore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:10:12">Organizzazione autore</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3976" effectiveDate="2025-05-20T10:10:19" statusCode="draft" lastModifiedDate="2025-05-20T10:10:42" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3976" shortName="codice_struttura">
+                    <implementation shortName="codice_struttura" markdown="Codice struttura"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:10:42">Codice struttura</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:10:42">Codice struttura</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3977" effectiveDate="2025-05-20T10:11:51" statusCode="draft" lastModifiedDate="2025-05-26T10:04:49" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3977" shortName="anagrafica_del_trascrittore">
+            <implementation shortName="anagrafica_del_trascrittore" markdown="Anagrafica del trascrittore"/>
+            <name language="it-IT" lastTranslated="2025-05-20T10:12:09">Anagrafica del trascrittore</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T10:12:09">Anagrafica del trascrittore</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3978" effectiveDate="2025-05-20T10:20:36" statusCode="draft" lastModifiedDate="2025-05-26T10:04:49" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3978" shortName="data_e_ora_della_trascrizione">
+                <implementation shortName="data_e_ora_della_trascrizione" markdown="Data e ora della trascrizione"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:20:48">Data e ora della trascrizione</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:20:48">Data e ora della trascrizione</desc>
+                <valueDomain type="datetime"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3979" effectiveDate="2025-05-20T10:21:11" statusCode="draft" lastModifiedDate="2025-05-20T10:21:26" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3979" shortName="identificativo_trascrittore">
+                <implementation shortName="identificativo_trascrittore" markdown="Identificativo trascrittore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:21:26">Identificativo trascrittore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:21:26">Identificativo trascrittore</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3980" effectiveDate="2025-05-20T10:21:39" statusCode="draft" lastModifiedDate="2025-05-20T10:23:14" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3980" shortName="indirizzo_del_trascrittore">
+                <implementation shortName="indirizzo_del_trascrittore" markdown="Indirizzo del trascrittore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:22:00">Indirizzo del trascrittore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:22:00">Indirizzo del trascrittore</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3981" effectiveDate="2025-05-20T10:22:08" statusCode="draft" lastModifiedDate="2025-05-20T10:22:17" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3981" shortName="stato">
+                    <implementation shortName="stato" markdown="Stato"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:22:17">Stato</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:22:17">Stato</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3982" effectiveDate="2025-05-20T10:22:21" statusCode="draft" lastModifiedDate="2025-05-20T10:22:30" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3982" shortName="regione">
+                    <implementation shortName="regione" markdown="Regione"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:22:30">Regione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:22:30">Regione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3983" effectiveDate="2025-05-20T10:22:33" statusCode="draft" lastModifiedDate="2025-05-20T10:22:41" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3983" shortName="provincia">
+                    <implementation shortName="provincia" markdown="Provincia"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:22:41">Provincia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:22:41">Provincia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3984" effectiveDate="2025-05-20T10:22:46" statusCode="draft" lastModifiedDate="2025-05-20T10:22:53" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3984" shortName="citta">
+                    <implementation shortName="citta" markdown="Città"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:22:53">Città</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:22:53">Città</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3985" effectiveDate="2025-05-20T10:22:57" statusCode="draft" lastModifiedDate="2025-05-20T10:23:05" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3985" shortName="viapiazza">
+                    <implementation shortName="viapiazza" markdown="Via/Piazza"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:23:05">Via/Piazza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:23:05">Via/Piazza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3986" effectiveDate="2025-05-20T10:23:08" statusCode="draft" lastModifiedDate="2025-05-20T10:23:14" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3986" shortName="cap">
+                    <implementation shortName="cap" markdown="CAP"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:23:14">CAP</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:23:14">CAP</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3987" effectiveDate="2025-05-20T10:23:53" statusCode="draft" lastModifiedDate="2025-05-20T10:24:27" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3987" shortName="recapiti_telefonici_ed_email_del_trascrittore">
+                <implementation shortName="recapiti_telefonici_ed_email_del_trascrittore" markdown="Recapiti telefonici ed email del trascrittore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:24:27">Recapiti telefonici ed email del trascrittore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:24:27">Recapiti telefonici ed email del trascrittore</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3988" effectiveDate="2025-05-20T10:24:46" statusCode="draft" lastModifiedDate="2025-05-20T10:25:41" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3988" shortName="nominativo_del_trascrittore">
+                <implementation shortName="nominativo_del_trascrittore" markdown="Nominativo del trascrittore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:24:59">Nominativo del trascrittore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:24:59">Nominativo del trascrittore</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3989" effectiveDate="2025-05-20T10:25:07" statusCode="draft" lastModifiedDate="2025-05-20T10:25:26" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3989" shortName="cognome_trascrittore">
+                    <implementation shortName="cognome_trascrittore" markdown="Cognome trascrittore"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:25:26">Cognome trascrittore</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:25:26">Cognome trascrittore</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3990" effectiveDate="2025-05-20T10:25:30" statusCode="draft" lastModifiedDate="2025-05-20T10:25:41" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3990" shortName="nome_trascrittore">
+                    <implementation shortName="nome_trascrittore" markdown="Nome trascrittore"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:25:41">Nome trascrittore</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:25:41">Nome trascrittore</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3991" effectiveDate="2025-05-20T10:26:38" statusCode="draft" lastModifiedDate="2025-05-20T10:27:57" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3991" shortName="organizzazione_del_trascrittore">
+                <implementation shortName="organizzazione_del_trascrittore" markdown="Organizzazione del Trascrittore"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:27:13">Organizzazione del Trascrittore</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:27:13">Organizzazione del Trascrittore</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3992" effectiveDate="2025-05-20T10:27:29" statusCode="draft" lastModifiedDate="2025-05-20T10:27:57" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3992" shortName="identificativo_della_struttura_del_trascrittore">
+                    <implementation shortName="identificativo_della_struttura_del_trascrittore" markdown="Identificativo della struttura del trascrittore"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:27:57">Identificativo della struttura del trascrittore</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:27:57">Identificativo della struttura del trascrittore</desc>
+                    <valueDomain type="identifier"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3993" effectiveDate="2025-05-20T10:28:30" statusCode="draft" lastModifiedDate="2025-05-20T10:51:11" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3993" shortName="anagrafica_del_firmatario">
+            <implementation shortName="anagrafica_del_firmatario" markdown="Anagrafica del firmatario"/>
+            <name language="it-IT" lastTranslated="2025-05-20T10:28:43">Anagrafica del firmatario</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T10:28:43">Anagrafica del firmatario</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4006" effectiveDate="2025-05-20T10:42:57" statusCode="draft" lastModifiedDate="2025-05-20T10:43:06" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4006" shortName="anagrafica_del_destinatario">
+                <implementation shortName="anagrafica_del_destinatario" markdown="Anagrafica del destinatario"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:43:06">Anagrafica del destinatario</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:43:06">Anagrafica del destinatario</desc>
+                <valueDomain type="date"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4007" effectiveDate="2025-05-20T10:43:26" statusCode="draft" lastModifiedDate="2025-05-20T10:43:43" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4007" shortName="flag_della_firma_del_documento">
+                <implementation shortName="flag_della_firma_del_documento" markdown="Flag della firma del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:43:43">Flag della firma del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:43:43">Flag della firma del documento</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4007.20250520104326.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4008" effectiveDate="2025-05-20T10:43:57" statusCode="draft" lastModifiedDate="2025-05-20T10:44:17" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4008" shortName="identificativo_del_firmatario">
+                <implementation shortName="identificativo_del_firmatario" markdown="Identificativo del firmatario"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:44:17">Identificativo del firmatario</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:44:17">Identificativo del firmatario</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4009" effectiveDate="2025-05-20T10:44:29" statusCode="draft" lastModifiedDate="2025-05-20T10:46:47" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4009" shortName="indirizzo_della_struttura">
+                <implementation shortName="indirizzo_della_struttura" markdown="Indirizzo della Struttura"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:44:49">Indirizzo della Struttura</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:44:49">Indirizzo della Struttura</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4010" effectiveDate="2025-05-20T10:45:08" statusCode="draft" lastModifiedDate="2025-05-20T10:45:29" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4010" shortName="stato">
+                    <implementation shortName="stato" markdown="Stato"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:45:29">Stato</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:45:29">Stato</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4011" effectiveDate="2025-05-20T10:45:36" statusCode="draft" lastModifiedDate="2025-05-20T10:45:45" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4011" shortName="regione">
+                    <implementation shortName="regione" markdown="Regione"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:45:45">Regione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:45:45">Regione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4012" effectiveDate="2025-05-20T10:45:49" statusCode="draft" lastModifiedDate="2025-05-20T10:46:00" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4012" shortName="provincia">
+                    <implementation shortName="provincia" markdown="Provincia"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:46:00">Provincia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:46:00">Provincia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4013" effectiveDate="2025-05-20T10:46:06" statusCode="draft" lastModifiedDate="2025-05-20T10:46:13" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4013" shortName="citta">
+                    <implementation shortName="citta" markdown="Città"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:46:13">Città</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:46:13">Città</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4014" effectiveDate="2025-05-20T10:46:23" statusCode="draft" lastModifiedDate="2025-05-20T10:46:33" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4014" shortName="viapiazza">
+                    <implementation shortName="viapiazza" markdown="Via/Piazza"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:46:33">Via/Piazza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:46:33">Via/Piazza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4015" effectiveDate="2025-05-20T10:46:38" statusCode="draft" lastModifiedDate="2025-05-20T10:46:47" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4015" shortName="cap">
+                    <implementation shortName="cap" markdown="CAP"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:46:47">CAP</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:46:47">CAP</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4016" effectiveDate="2025-05-20T10:47:04" statusCode="draft" lastModifiedDate="2025-05-20T10:47:24" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4016" shortName="recapiti_del_firmatario">
+                <implementation shortName="recapiti_del_firmatario" markdown="Recapiti del firmatario"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:47:24">Recapiti del firmatario</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:47:24">Recapiti del firmatario</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4017" effectiveDate="2025-05-20T10:47:41" statusCode="draft" lastModifiedDate="2025-05-20T10:48:58" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4017" shortName="nominativo_del_firmatario">
+                <implementation shortName="nominativo_del_firmatario" markdown="Nominativo del firmatario"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:47:57">Nominativo del firmatario</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:47:57">Nominativo del firmatario</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4018" effectiveDate="2025-05-20T10:48:13" statusCode="draft" lastModifiedDate="2025-05-20T10:48:34" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4018" shortName="nome_del_firmatario">
+                    <implementation shortName="nome_del_firmatario" markdown="Nome del firmatario"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:48:34">Nome del firmatario</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:48:34">Nome del firmatario</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4019" effectiveDate="2025-05-20T10:48:42" statusCode="draft" lastModifiedDate="2025-05-20T10:48:58" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4019" shortName="cognome_del_firmatario">
+                    <implementation shortName="cognome_del_firmatario" markdown="Cognome del firmatario"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:48:58">Cognome del firmatario</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:48:58">Cognome del firmatario</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4020" effectiveDate="2025-05-20T10:50:48" statusCode="draft" lastModifiedDate="2025-05-20T10:51:11" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4020" shortName="organizzazione_del_firmatario">
+                <implementation shortName="organizzazione_del_firmatario" markdown="Organizzazione del firmatario"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:51:11">Organizzazione del firmatario</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:51:11">Organizzazione del firmatario</desc>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3994" effectiveDate="2025-05-20T10:34:10" statusCode="draft" lastModifiedDate="2025-05-20T10:39:30" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3994" shortName="anagrafica_struttura_custode">
+            <implementation shortName="anagrafica_struttura_custode" markdown="Anagrafica struttura custode"/>
+            <name language="it-IT" lastTranslated="2025-05-20T10:34:23">Anagrafica struttura custode</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T10:34:23">Anagrafica struttura custode</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3995" effectiveDate="2025-05-20T10:35:12" statusCode="draft" lastModifiedDate="2025-05-20T10:35:23" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3995" shortName="identificativo_dellorganizzazione_custode_del_documento">
+                <implementation shortName="identificativo_dellorganizzazione_custode_del_documento" markdown="Identificativo dell'organizzazione custode del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:35:23">Identificativo dell'organizzazione custode del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:35:23">Identificativo dell'organizzazione custode del documento</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3996" effectiveDate="2025-05-20T10:35:39" statusCode="draft" lastModifiedDate="2025-05-20T10:35:48" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3996" shortName="identificativo_dellorganizzazione_custode_del_documento_3996">
+                <implementation shortName="identificativo_dellorganizzazione_custode_del_documento_3996" markdown="Identificativo dell'organizzazione custode del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:35:48">Identificativo dell'organizzazione custode del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:35:48">Identificativo dell'organizzazione custode del documento</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3997" effectiveDate="2025-05-20T10:35:59" statusCode="draft" lastModifiedDate="2025-05-20T10:38:44" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3997" shortName="indirizzo_della_struttura">
+                <implementation shortName="indirizzo_della_struttura" markdown="Indirizzo della Struttura"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:36:14">Indirizzo della Struttura</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:36:14">Indirizzo della Struttura</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3998" effectiveDate="2025-05-20T10:37:06" statusCode="draft" lastModifiedDate="2025-05-20T10:37:13" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3998" shortName="stato">
+                    <implementation shortName="stato" markdown="Stato"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:37:13">Stato</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:37:13">Stato</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3999" effectiveDate="2025-05-20T10:37:16" statusCode="draft" lastModifiedDate="2025-05-20T10:37:26" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3999" shortName="regione">
+                    <implementation shortName="regione" markdown="Regione"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:37:26">Regione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:37:26">Regione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4000" effectiveDate="2025-05-20T10:37:35" statusCode="draft" lastModifiedDate="2025-05-20T10:37:48" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4000" shortName="provincia">
+                    <implementation shortName="provincia" markdown="Provincia"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:37:48">Provincia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:37:48">Provincia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4001" effectiveDate="2025-05-20T10:38:09" statusCode="draft" lastModifiedDate="2025-05-20T10:38:18" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4001" shortName="citta">
+                    <implementation shortName="citta" markdown="Città"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:38:18">Città</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:38:18">Città</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4002" effectiveDate="2025-05-20T10:38:23" statusCode="draft" lastModifiedDate="2025-05-20T10:38:33" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4002" shortName="viapiazza">
+                    <implementation shortName="viapiazza" markdown="Via/Piazza"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:38:33">Via/Piazza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:38:33">Via/Piazza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4003" effectiveDate="2025-05-20T10:38:36" statusCode="draft" lastModifiedDate="2025-05-20T10:38:44" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4003" shortName="cap">
+                    <implementation shortName="cap" markdown="CAP"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:38:44">CAP</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:38:44">CAP</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4004" effectiveDate="2025-05-20T10:39:19" statusCode="draft" lastModifiedDate="2025-05-20T10:39:30" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4004" shortName="identificativo_dellorganizzazione_custode_del_documento">
+                <implementation shortName="identificativo_dellorganizzazione_custode_del_documento" markdown="Identificativo dell'organizzazione custode del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:39:30">Identificativo dell'organizzazione custode del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:39:30">Identificativo dell'organizzazione custode del documento</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4005" effectiveDate="2025-05-20T10:41:34" statusCode="draft" lastModifiedDate="2025-05-20T11:09:40" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4005" shortName="anagrafica_del_destinatario">
+            <implementation shortName="anagrafica_del_destinatario" markdown="Anagrafica del destinatario"/>
+            <name language="it-IT" lastTranslated="2025-05-20T10:41:44">Anagrafica del destinatario</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T10:41:44">Anagrafica del destinatario</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4021" effectiveDate="2025-05-20T10:51:49" statusCode="draft" lastModifiedDate="2025-05-20T10:52:20" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4021" shortName="identificativo_della_persona_destinataria_del_documento">
+                <implementation shortName="identificativo_della_persona_destinataria_del_documento" markdown="Identificativo della persona destinataria del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:52:20">Identificativo della persona destinataria del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:52:20">Identificativo della persona destinataria del documento</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4022" effectiveDate="2025-05-20T10:53:03" statusCode="draft" lastModifiedDate="2025-05-20T10:59:22" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4022" shortName="indirizzo_della_persona_destinataria_del_documento">
+                <implementation shortName="indirizzo_della_persona_destinataria_del_documento" markdown="Indirizzo della persona destinataria del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T10:53:21">Indirizzo della persona destinataria del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T10:53:21">Indirizzo della persona destinataria del documento</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4029" effectiveDate="2025-05-20T10:58:17" statusCode="cancelled" lastModifiedDate="2025-05-20T10:59:22" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4029" shortName="recapito_della_persona_destinataria_del_documento">
+                    <implementation shortName="recapito_della_persona_destinataria_del_documento" markdown="Recapito della persona destinataria del documento"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:58:45">Recapito della persona destinataria del documento</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:58:45">Recapito della persona destinataria del documento</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4023" effectiveDate="2025-05-20T10:53:37" statusCode="draft" lastModifiedDate="2025-05-20T10:53:45" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4023" shortName="stato">
+                    <implementation shortName="stato" markdown="Stato"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:53:45">Stato</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:53:45">Stato</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4024" effectiveDate="2025-05-20T10:53:50" statusCode="draft" lastModifiedDate="2025-05-20T10:53:58" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4024" shortName="regione">
+                    <implementation shortName="regione" markdown="Regione"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:53:58">Regione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:53:58">Regione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4025" effectiveDate="2025-05-20T10:54:09" statusCode="draft" lastModifiedDate="2025-05-20T10:54:16" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4025" shortName="provincia">
+                    <implementation shortName="provincia" markdown="Provincia"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:54:16">Provincia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:54:16">Provincia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4026" effectiveDate="2025-05-20T10:54:19" statusCode="draft" lastModifiedDate="2025-05-20T10:54:29" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4026" shortName="citta">
+                    <implementation shortName="citta" markdown="Città"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:54:29">Città</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:54:29">Città</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4027" effectiveDate="2025-05-20T10:54:34" statusCode="draft" lastModifiedDate="2025-05-20T10:54:44" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4027" shortName="viapiazza">
+                    <implementation shortName="viapiazza" markdown="Via/Piazza"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:54:44">Via/Piazza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:54:44">Via/Piazza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4028" effectiveDate="2025-05-20T10:54:49" statusCode="draft" lastModifiedDate="2025-05-20T10:55:08" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4028" shortName="cap">
+                    <implementation shortName="cap" markdown="CAP"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T10:55:08">CAP</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T10:55:08">CAP</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4030" effectiveDate="2025-05-20T10:59:29" statusCode="draft" lastModifiedDate="2025-05-20T11:00:32" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4030" shortName="recapito_di_contatto_della_persona_destinataria_del_documento">
+                <implementation shortName="recapito_di_contatto_della_persona_destinataria_del_documento" markdown="Recapito di contatto della persona destinataria del documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:00:32">Recapito di contatto della persona destinataria del documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:00:32">Recapito di contatto della persona destinataria del documento</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4031" effectiveDate="2025-05-20T11:00:54" statusCode="draft" lastModifiedDate="2025-05-20T11:04:43" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4031" shortName="nominativo_della_persona_a_cui_sara_destinato_il_documento">
+                <implementation shortName="nominativo_della_persona_a_cui_sara_destinato_il_documento" markdown="Nominativo della persona a cui sarà destinato il documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:01:50">Nominativo della persona a cui sarà destinato il documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:01:50">Nominativo della persona a cui sarà destinato il documento</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4032" effectiveDate="2025-05-20T11:03:23" statusCode="draft" lastModifiedDate="2025-05-20T11:03:42" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4032" shortName="nome_della_persona_a_cui_sara_destinato_il_documento">
+                    <implementation shortName="nome_della_persona_a_cui_sara_destinato_il_documento" markdown="Nome della persona a cui sarà destinato il documento"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:03:42">Nome della persona a cui sarà destinato il documento</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:03:42">Nome della persona a cui sarà destinato il documento</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4033" effectiveDate="2025-05-20T11:04:20" statusCode="draft" lastModifiedDate="2025-05-20T11:04:43" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4033" shortName="cognome_della_persona_a_cui_sara_destinato_il_documento">
+                    <implementation shortName="cognome_della_persona_a_cui_sara_destinato_il_documento" markdown="Cognome della persona a cui sarà destinato il documento"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:04:43">Cognome della persona a cui sarà destinato il documento</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:04:43">Cognome della persona a cui sarà destinato il documento</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4034" effectiveDate="2025-05-20T11:05:39" statusCode="draft" lastModifiedDate="2025-05-20T11:06:14" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4034" shortName="identificativo_dellorganizzazione_che_ricevera_il_documento">
+                <implementation shortName="identificativo_dellorganizzazione_che_ricevera_il_documento" markdown="Identificativo dell'organizzazione che riceverà il documento"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:06:14">Identificativo dell'organizzazione che riceverà il documento</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:06:14">Identificativo dell'organizzazione che riceverà il documento</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4035" effectiveDate="2025-05-20T11:06:29" statusCode="draft" lastModifiedDate="2025-05-20T11:06:40" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4035" shortName="nome_dellorganizzazione">
+                <implementation shortName="nome_dellorganizzazione" markdown="Nome dell'organizzazione"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:06:40">Nome dell'organizzazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:06:40">Nome dell'organizzazione</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4036" effectiveDate="2025-05-20T11:06:53" statusCode="draft" lastModifiedDate="2025-05-20T11:07:12" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4036" shortName="recapiti_di_contatto_dellorganizzazione">
+                <implementation shortName="recapiti_di_contatto_dellorganizzazione" markdown="Recapiti di contatto dell'organizzazione"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:07:12">Recapiti di contatto dell'organizzazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:07:12">Recapiti di contatto dell'organizzazione</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4037" effectiveDate="2025-05-20T11:07:37" statusCode="draft" lastModifiedDate="2025-05-20T11:09:40" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4037" shortName="indirizzo_dellorganizzazione">
+                <implementation shortName="indirizzo_dellorganizzazione" markdown="Indirizzo dell'organizzazione"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:07:58">Indirizzo dell'organizzazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:07:58">Indirizzo dell'organizzazione</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4039" effectiveDate="2025-05-20T11:08:27" statusCode="draft" lastModifiedDate="2025-05-20T11:08:35" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4039" shortName="stato">
+                    <implementation shortName="stato" markdown="Stato"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:08:35">Stato</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:08:35">Stato</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4040" effectiveDate="2025-05-20T11:08:39" statusCode="draft" lastModifiedDate="2025-05-20T11:08:46" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4040" shortName="regione">
+                    <implementation shortName="regione" markdown="Regione"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:08:46">Regione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:08:46">Regione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4041" effectiveDate="2025-05-20T11:08:50" statusCode="draft" lastModifiedDate="2025-05-20T11:08:57" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4041" shortName="provincia">
+                    <implementation shortName="provincia" markdown="Provincia"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:08:57">Provincia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:08:57">Provincia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4042" effectiveDate="2025-05-20T11:09:02" statusCode="draft" lastModifiedDate="2025-05-20T11:09:08" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4042" shortName="citta">
+                    <implementation shortName="citta" markdown="Città"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:09:08">Città</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:09:08">Città</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4043" effectiveDate="2025-05-20T11:09:13" statusCode="draft" lastModifiedDate="2025-05-20T11:09:25" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4043" shortName="viapiazza">
+                    <implementation shortName="viapiazza" markdown="Via/Piazza"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:09:25">Via/Piazza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:09:25">Via/Piazza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4044" effectiveDate="2025-05-20T11:09:33" statusCode="draft" lastModifiedDate="2025-05-20T11:09:40" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4044" shortName="cap">
+                    <implementation shortName="cap" markdown="CAP"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T11:09:40">CAP</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T11:09:40">CAP</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4038" effectiveDate="2025-05-20T11:08:06" statusCode="cancelled" lastModifiedDate="2025-05-20T11:08:23" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4038" shortName="stato">
+                <implementation shortName="stato" markdown="Stato"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:08:14">Stato</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:08:14">Stato</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4045" effectiveDate="2025-05-20T11:25:12" statusCode="draft" lastModifiedDate="2025-05-26T10:05:29" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4045" shortName="anagrafica_del_partecipante">
+            <implementation shortName="anagrafica_del_partecipante" markdown="Anagrafica del partecipante"/>
+            <name language="it-IT" lastTranslated="2025-05-20T11:25:34">Anagrafica del partecipante</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T11:25:34">Anagrafica del partecipante</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4046" effectiveDate="2025-05-20T11:25:55" statusCode="draft" lastModifiedDate="2025-05-26T10:05:29" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4046" shortName="orario_di_partecipazione">
+                <implementation shortName="orario_di_partecipazione" markdown="Orario di partecipazione"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:26:28">Orario di partecipazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:26:28">Orario di partecipazione</desc>
+                <valueDomain type="datetime"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4047" effectiveDate="2025-05-20T11:30:23" statusCode="draft" lastModifiedDate="2025-05-20T11:30:38" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4047" shortName="identificativo_partecipante">
+                <implementation shortName="identificativo_partecipante" markdown="Identificativo partecipante"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:30:38">Identificativo partecipante</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:30:38">Identificativo partecipante</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4048" effectiveDate="2025-05-20T11:30:52" statusCode="draft" lastModifiedDate="2025-05-20T11:31:33" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4048" shortName="funzione_partecipante_allatto">
+                <implementation shortName="funzione_partecipante_allatto" markdown="Funzione partecipante all'atto"/>
+                <name language="it-IT" lastTranslated="2025-05-20T11:31:20">Funzione partecipante all'atto</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T11:31:20">Funzione partecipante all'atto</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4048.20250520113052.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4049" effectiveDate="2025-05-20T14:56:39" statusCode="draft" lastModifiedDate="2025-05-20T14:56:58" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4049" shortName="recapiti_telefonici_ed_email_del_partecipante">
+                <implementation shortName="recapiti_telefonici_ed_email_del_partecipante" markdown="Recapiti telefonici ed email del partecipante"/>
+                <name language="it-IT" lastTranslated="2025-05-20T14:56:58">Recapiti telefonici ed email del partecipante</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T14:56:58">Recapiti telefonici ed email del partecipante</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4050" effectiveDate="2025-05-20T14:57:09" statusCode="draft" lastModifiedDate="2025-05-20T14:58:45" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4050" shortName="nominativo">
+                <implementation shortName="nominativo" markdown="Nominativo"/>
+                <name language="it-IT" lastTranslated="2025-05-20T14:57:20">Nominativo</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T14:57:20">Nominativo</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4052" effectiveDate="2025-05-20T14:57:48" statusCode="cancelled" lastModifiedDate="2025-05-20T14:58:29" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4052" shortName="nome">
+                    <implementation shortName="nome" markdown="Nome"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T14:58:08">Nome</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T14:58:08">Nome</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4051" effectiveDate="2025-05-20T14:57:33" statusCode="draft" lastModifiedDate="2025-05-20T14:57:42" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4051" shortName="cognome">
+                    <implementation shortName="cognome" markdown="Cognome"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T14:57:42">Cognome</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T14:57:42">Cognome</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4053" effectiveDate="2025-05-20T14:58:35" statusCode="draft" lastModifiedDate="2025-05-20T14:58:45" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4053" shortName="nome">
+                    <implementation shortName="nome" markdown="Nome"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T14:58:45">Nome</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T14:58:45">Nome</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4054" effectiveDate="2025-05-20T14:59:16" statusCode="draft" lastModifiedDate="2025-05-20T14:59:53" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4054" shortName="organizzazione_participant">
+                <implementation shortName="organizzazione_participant" markdown="Organizzazione participant"/>
+                <name language="it-IT" lastTranslated="2025-05-20T14:59:26">Organizzazione participant</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T14:59:26">Organizzazione participant</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4055" effectiveDate="2025-05-20T14:59:40" statusCode="draft" lastModifiedDate="2025-05-20T14:59:53" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4055" shortName="identificativo_della_struttura">
+                    <implementation shortName="identificativo_della_struttura" markdown="Identificativo della struttura"/>
+                    <name language="it-IT" lastTranslated="2025-05-20T14:59:53">Identificativo della struttura</name>
+                    <desc language="it-IT" lastTranslated="2025-05-20T14:59:53">Identificativo della struttura</desc>
+                    <valueDomain type="identifier"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4056" effectiveDate="2025-05-20T15:00:10" statusCode="draft" lastModifiedDate="2025-05-20T15:01:03" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4056" shortName="dati_richiesta">
+            <implementation shortName="dati_richiesta" markdown="Dati richiesta"/>
+            <name language="it-IT" lastTranslated="2025-05-20T15:00:18">Dati richiesta</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T15:00:18">Dati richiesta</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4057" effectiveDate="2025-05-20T15:00:33" statusCode="draft" lastModifiedDate="2025-05-20T15:01:03" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4057" shortName="identificativo_della_richiesta_es_nre">
+                <implementation shortName="identificativo_della_richiesta_es_nre" markdown="Identificativo della richiesta (es. NRE)"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:01:03">Identificativo della richiesta (es. NRE)</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:01:03">Identificativo della richiesta (es. NRE)</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4058" effectiveDate="2025-05-20T15:04:22" statusCode="draft" lastModifiedDate="2025-05-26T12:56:12" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4058" shortName="dati_dellencounter">
+            <implementation shortName="dati_dellencounter" markdown="Dati dell'encounter"/>
+            <name language="it-IT" lastTranslated="2025-05-20T15:04:33">Dati dell'encounter</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T15:04:33">Dati dell'encounter</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4059" effectiveDate="2025-05-20T15:04:47" statusCode="draft" lastModifiedDate="2025-05-20T15:05:21" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4059" shortName="identifico_del_ricovero_numero_nosologico_identificativo_dellaccesso_ambulatoriale">
+                <implementation shortName="identifico_del_ricovero_numero_nosologico_identificativo_dellaccesso_ambulatoriale" markdown="Identifico del ricovero (numero nosologico) / Identificativo dell'accesso ambulatoriale"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:05:21">Identifico del ricovero (numero nosologico) / Identificativo dell'accesso ambulatoriale</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:05:21">Identifico del ricovero (numero nosologico) / Identificativo dell'accesso ambulatoriale</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4060" effectiveDate="2025-05-20T15:05:35" statusCode="draft" lastModifiedDate="2025-05-26T12:56:12" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4060" shortName="tipologia_di_provenienza_dellassistito">
+                <implementation shortName="tipologia_di_provenienza_dellassistito" markdown="Tipologia di provenienza dell'assistito"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:06:13">Tipologia di provenienza dell'assistito</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:06:13">Tipologia di provenienza dell'assistito</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4060.20250520150535.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4061" effectiveDate="2025-05-20T15:07:25" statusCode="draft" lastModifiedDate="2025-05-20T15:07:53" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4061" shortName="data_e_orario_in_cui_e_avvenuto_lincontro">
+                <implementation shortName="data_e_orario_in_cui_e_avvenuto_lincontro" markdown="Data e orario in cui è avvenuto l'incontro"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:07:42">Data e orario in cui è avvenuto l'incontro</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:07:42">Data e orario in cui è avvenuto l'incontro</desc>
+                <valueDomain type="datetime"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4062" effectiveDate="2025-05-20T15:08:03" statusCode="draft" lastModifiedDate="2025-05-20T15:08:22" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4062" shortName="identificativo_del_responsabile">
+                <implementation shortName="identificativo_del_responsabile" markdown="Identificativo del responsabile"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:08:22">Identificativo del responsabile</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:08:22">Identificativo del responsabile</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4063" effectiveDate="2025-05-20T15:08:37" statusCode="draft" lastModifiedDate="2025-05-20T15:08:47" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4063" shortName="nome_del_responsabile">
+                <implementation shortName="nome_del_responsabile" markdown="Nome del responsabile"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:08:47">Nome del responsabile</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:08:47">Nome del responsabile</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4064" effectiveDate="2025-05-20T15:08:58" statusCode="draft" lastModifiedDate="2025-05-20T15:09:20" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4064" shortName="identificativo_del_reparto_del_pronto_soccorso_o_dellambulatorio">
+                <implementation shortName="identificativo_del_reparto_del_pronto_soccorso_o_dellambulatorio" markdown="Identificativo del reparto, del pronto soccorso o dell'ambulatorio"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:09:20">Identificativo del reparto, del pronto soccorso o dell'ambulatorio</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:09:20">Identificativo del reparto, del pronto soccorso o dell'ambulatorio</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4065" effectiveDate="2025-05-20T15:09:36" statusCode="draft" lastModifiedDate="2025-05-20T15:09:58" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4065" shortName="nome_del_reparto_del_pronto_soccorso_o_dellambulatorio">
+                <implementation shortName="nome_del_reparto_del_pronto_soccorso_o_dellambulatorio" markdown="Nome del reparto, del pronto soccorso o dell'ambulatorio"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:09:58">Nome del reparto, del pronto soccorso o dell'ambulatorio</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:09:58">Nome del reparto, del pronto soccorso o dell'ambulatorio</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4066" effectiveDate="2025-05-20T15:10:11" statusCode="draft" lastModifiedDate="2025-05-20T15:10:26" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4066" shortName="identificativo_del_presidio">
+                <implementation shortName="identificativo_del_presidio" markdown="Identificativo del presidio"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:10:26">Identificativo del presidio</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:10:26">Identificativo del presidio</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4067" effectiveDate="2025-05-20T15:10:35" statusCode="draft" lastModifiedDate="2025-05-20T15:10:46" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4067" shortName="nome_del_presidio">
+                <implementation shortName="nome_del_presidio" markdown="Nome del presidio"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:10:46">Nome del presidio</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:10:46">Nome del presidio</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4068" effectiveDate="2025-05-20T15:11:18" statusCode="draft" lastModifiedDate="2025-05-20T15:11:38" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4068" shortName="recapiti_di_contatto_della_segreteria_del_presidio">
+                <implementation shortName="recapiti_di_contatto_della_segreteria_del_presidio" markdown="Recapiti di contatto della segreteria del presidio"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:11:38">Recapiti di contatto della segreteria del presidio</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:11:38">Recapiti di contatto della segreteria del presidio</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4069" effectiveDate="2025-05-20T15:11:48" statusCode="draft" lastModifiedDate="2025-05-20T15:12:00" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4069" shortName="indirizzo_del_presidio">
+                <implementation shortName="indirizzo_del_presidio" markdown="Indirizzo del presidio"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:12:00">Indirizzo del presidio</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:12:00">Indirizzo del presidio</desc>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4070" effectiveDate="2025-05-20T15:12:18" statusCode="draft" lastModifiedDate="2025-05-20T15:12:41" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4070" shortName="identificativo_dellazienda_sanitaria">
+                <implementation shortName="identificativo_dellazienda_sanitaria" markdown="Identificativo dell'azienda sanitaria"/>
+                <name language="it-IT" lastTranslated="2025-05-20T15:12:41">Identificativo dell'azienda sanitaria</name>
+                <desc language="it-IT" lastTranslated="2025-05-20T15:12:41">Identificativo dell'azienda sanitaria</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3961" effectiveDate="2025-05-20T10:04:10" statusCode="cancelled" lastModifiedDate="2025-05-20T10:05:02" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3961" shortName="anagrafica_dellautore">
+            <implementation shortName="anagrafica_dellautore" markdown="Anagrafica dell'autore"/>
+            <name language="it-IT" lastTranslated="2025-05-20T10:04:26">Anagrafica dell'autore</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T10:04:26">Anagrafica dell'autore</desc>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3938" effectiveDate="2025-05-20T09:54:29" statusCode="cancelled" lastModifiedDate="2025-05-20T09:54:59" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3938" shortName="chiave_identificativa_dellassistito">
+            <implementation shortName="chiave_identificativa_dellassistito" markdown="Chiave identificativa dell'assistito"/>
+            <name language="it-IT" lastTranslated="2025-05-20T09:54:51">Chiave identificativa dell'assistito</name>
+            <desc language="it-IT" lastTranslated="2025-05-20T09:54:51">Chiave identificativa dell'assistito</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3911" effectiveDate="2025-05-19T16:09:05" statusCode="cancelled" lastModifiedDate="2025-05-19T16:24:15" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-3911" shortName="anagrafica_autore">
+            <implementation shortName="anagrafica_autore" markdown="Anagrafica autore"/>
+            <contains ref="2.16.840.1.113883.3.1937.777.63.2.1.1880" flexibility="2023-11-17T12:10:00" prefix="hl7itig-" datasetId="2.16.840.1.113883.3.1937.777.63.1.15" datasetEffectiveDate="2023-11-16T18:53:10" datasetStatusCode="draft" iType="group" iStatusCode="draft" iEffectiveDate="2023-11-17T12:10:00" refdisplay="hl7itig-dataelement-1880"/>
+            <name language="it-IT" lastTranslated="2023-11-17T12:10:11">Anagrafica autore</name>
+            <desc language="it-IT" lastTranslated="2023-11-17T12:10:11">
+                        <p>Anagrafica autore</p>
+                    </desc>
+        </concept>
+    </concept>
+    <concept id="2.16.840.1.113883.3.1937.777.63.2.1.3844" effectiveDate="2025-05-16T12:45:36" statusCode="draft" lastModifiedDate="2025-05-26T12:55:17" type="group" minimumMultiplicity="1" maximumMultiplicity="1" conformance="M" isMandatory="true" iddisplay="hl7itig-dataelement-3844" shortName="body">
+        <implementation shortName="body" markdown="Body"/>
+        <name language="it-IT" lastTranslated="2025-05-16T12:45:47">Body</name>
+        <desc language="it-IT" lastTranslated="2025-05-16T12:45:47">Body</desc>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4090" effectiveDate="2025-05-26T10:06:26" statusCode="draft" lastModifiedDate="2025-05-26T10:27:30" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4090" shortName="quesito_diagnostico">
+            <implementation shortName="quesito_diagnostico" markdown="Quesito Diagnostico"/>
+            <name language="it-IT" lastTranslated="2025-05-26T10:06:46">Quesito Diagnostico</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T10:06:46">Quesito Diagnostico</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4091" effectiveDate="2025-05-26T10:26:43" statusCode="draft" lastModifiedDate="2025-05-26T10:27:04" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4091" shortName="codice_quesito_diagnostico">
+                <implementation shortName="codice_quesito_diagnostico" markdown="Codice quesito diagnostico"/>
+                <name language="it-IT" lastTranslated="2025-05-26T10:27:04">Codice quesito diagnostico</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T10:27:04">Codice quesito diagnostico</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4091.20250526102643.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4092" effectiveDate="2025-05-26T10:27:17" statusCode="draft" lastModifiedDate="2025-05-26T10:27:30" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4092" shortName="descrizione_quesito_diagnostico">
+                <implementation shortName="descrizione_quesito_diagnostico" markdown="Descrizione quesito diagnostico"/>
+                <name language="it-IT" lastTranslated="2025-05-26T10:27:30">Descrizione quesito diagnostico</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T10:27:30">Descrizione quesito diagnostico</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4093" effectiveDate="2025-05-26T10:27:55" statusCode="draft" lastModifiedDate="2025-05-26T11:03:03" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4093" shortName="storia_clinica">
+            <implementation shortName="storia_clinica" markdown="Storia Clinica"/>
+            <name language="it-IT" lastTranslated="2025-05-26T10:28:11">Storia Clinica</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T10:28:11">Storia Clinica</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4094" effectiveDate="2025-05-26T10:28:22" statusCode="draft" lastModifiedDate="2025-05-26T10:30:23" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4094" shortName="anamnesi_patologica">
+                <implementation shortName="anamnesi_patologica" markdown="Anamnesi Patologica"/>
+                <name language="it-IT" lastTranslated="2025-05-26T10:28:35">Anamnesi Patologica</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T10:28:35">Anamnesi Patologica</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4095" effectiveDate="2025-05-26T10:28:56" statusCode="draft" lastModifiedDate="2025-05-26T10:29:11" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4095" shortName="codice_anamnesi">
+                    <implementation shortName="codice_anamnesi" markdown="Codice Anamnesi"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:29:11">Codice Anamnesi</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:29:11">Codice Anamnesi</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4095.20250526102856.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4096" effectiveDate="2025-05-26T10:29:20" statusCode="draft" lastModifiedDate="2025-05-26T10:29:32" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4096" shortName="descrizione_anamnesi">
+                    <implementation shortName="descrizione_anamnesi" markdown="Descrizione Anamnesi"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:29:32">Descrizione Anamnesi</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:29:32">Descrizione Anamnesi</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4097" effectiveDate="2025-05-26T10:29:51" statusCode="draft" lastModifiedDate="2025-05-26T10:30:03" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4097" shortName="dettaglio_cronicita">
+                    <implementation shortName="dettaglio_cronicita" markdown="Dettaglio Cronicità"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:30:03">Dettaglio Cronicità</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:30:03">Dettaglio Cronicità</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4098" effectiveDate="2025-05-26T10:30:07" statusCode="draft" lastModifiedDate="2025-05-26T10:30:23" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4098" shortName="dettaglio_stato_patologia">
+                    <implementation shortName="dettaglio_stato_patologia" markdown="Dettaglio Stato Patologia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:30:23">Dettaglio Stato Patologia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:30:23">Dettaglio Stato Patologia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4099" effectiveDate="2025-05-26T10:32:49" statusCode="draft" lastModifiedDate="2025-05-26T10:46:29" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4099" shortName="anamnesi_familiare">
+                <implementation shortName="anamnesi_familiare" markdown="Anamnesi Familiare"/>
+                <name language="it-IT" lastTranslated="2025-05-26T10:33:15">Anamnesi Familiare</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T10:33:15">Anamnesi Familiare</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4101" effectiveDate="2025-05-26T10:41:47" statusCode="draft" lastModifiedDate="2025-05-26T10:42:09" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4101" shortName="codice_patologia">
+                    <implementation shortName="codice_patologia" markdown="Codice Patologia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:42:09">Codice Patologia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:42:09">Codice Patologia</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4101.20250526104147.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4100" effectiveDate="2025-05-26T10:38:08" statusCode="draft" lastModifiedDate="2025-05-26T10:41:42" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4100" shortName="descrizione_patologia">
+                    <implementation shortName="descrizione_patologia" markdown="Descrizione Patologia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:41:42">Descrizione Patologia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:41:42">Descrizione Patologia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4102" effectiveDate="2025-05-26T10:45:21" statusCode="draft" lastModifiedDate="2025-05-26T10:45:39" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4102" shortName="familiarita">
+                    <implementation shortName="familiarita" markdown="Familiarità"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:45:39">Familiarità</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:45:39">Familiarità</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4103" effectiveDate="2025-05-26T10:45:49" statusCode="draft" lastModifiedDate="2025-05-26T10:46:03" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4103" shortName="eta_insorgenza">
+                    <implementation shortName="eta_insorgenza" markdown="Età Insorgenza"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:46:03">Età Insorgenza</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:46:03">Età Insorgenza</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4104" effectiveDate="2025-05-26T10:46:14" statusCode="draft" lastModifiedDate="2025-05-26T10:46:29" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4104" shortName="eta_decesso">
+                    <implementation shortName="eta_decesso" markdown="Età Decesso"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:46:29">Età Decesso</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:46:29">Età Decesso</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4105" effectiveDate="2025-05-26T10:53:18" statusCode="draft" lastModifiedDate="2025-05-26T10:59:06" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4105" shortName="allergie">
+                <implementation shortName="allergie" markdown="Allergie"/>
+                <name language="it-IT" lastTranslated="2025-05-26T10:53:28">Allergie</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T10:53:28">Allergie</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4106" effectiveDate="2025-05-26T10:55:49" statusCode="draft" lastModifiedDate="2025-05-26T10:56:02" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4106" shortName="codice_allergia">
+                    <implementation shortName="codice_allergia" markdown="Codice Allergia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:56:02">Codice Allergia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:56:02">Codice Allergia</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4106.20250526105549.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4107" effectiveDate="2025-05-26T10:56:06" statusCode="draft" lastModifiedDate="2025-05-26T10:56:20" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4107" shortName="descrizione_allergia">
+                    <implementation shortName="descrizione_allergia" markdown="Descrizione Allergia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:56:20">Descrizione Allergia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:56:20">Descrizione Allergia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4108" effectiveDate="2025-05-26T10:56:38" statusCode="draft" lastModifiedDate="2025-05-26T10:56:52" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4108" shortName="agente">
+                    <implementation shortName="agente" markdown="Agente"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:56:52">Agente</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:56:52">Agente</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4109" effectiveDate="2025-05-26T10:57:23" statusCode="draft" lastModifiedDate="2025-05-26T10:57:40" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4109" shortName="reazione">
+                    <implementation shortName="reazione" markdown="Reazione"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:57:40">Reazione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:57:40">Reazione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4110" effectiveDate="2025-05-26T10:57:55" statusCode="draft" lastModifiedDate="2025-05-26T10:58:17" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4110" shortName="criticita_dellallergia">
+                    <implementation shortName="criticita_dellallergia" markdown="Criticità dell'allergia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:58:17">Criticità dell'allergia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:58:17">Criticità dell'allergia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4111" effectiveDate="2025-05-26T10:58:40" statusCode="draft" lastModifiedDate="2025-05-26T10:58:52" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4111" shortName="stato_dellallergia">
+                    <implementation shortName="stato_dellallergia" markdown="Stato dell'allergia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:58:52">Stato dell'allergia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:58:52">Stato dell'allergia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4112" effectiveDate="2025-05-26T10:58:58" statusCode="draft" lastModifiedDate="2025-05-26T10:59:06" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4112" shortName="note_e_commenti">
+                    <implementation shortName="note_e_commenti" markdown="Note e commenti"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T10:59:06">Note e commenti</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T10:59:06">Note e commenti</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4113" effectiveDate="2025-05-26T10:59:20" statusCode="draft" lastModifiedDate="2025-05-26T11:03:03" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4113" shortName="terapia_farmacologica_in_atto">
+                <implementation shortName="terapia_farmacologica_in_atto" markdown="Terapia Farmacologica In Atto"/>
+                <name language="it-IT" lastTranslated="2025-05-26T10:59:36">Terapia Farmacologica In Atto</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T10:59:36">Terapia Farmacologica In Atto</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4114" effectiveDate="2025-05-26T11:02:21" statusCode="draft" lastModifiedDate="2025-05-26T11:02:35" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4114" shortName="codice_del_farmaco">
+                    <implementation shortName="codice_del_farmaco" markdown="Codice del Farmaco"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T11:02:35">Codice del Farmaco</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T11:02:35">Codice del Farmaco</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4114.20250526110221.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4115" effectiveDate="2025-05-26T11:02:45" statusCode="draft" lastModifiedDate="2025-05-26T11:03:03" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4115" shortName="descrizione_del_farmaco">
+                    <implementation shortName="descrizione_del_farmaco" markdown="Descrizione del farmaco"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T11:03:03">Descrizione del farmaco</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T11:03:03">Descrizione del farmaco</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4116" effectiveDate="2025-05-26T11:31:02" statusCode="draft" lastModifiedDate="2025-05-26T11:41:32" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4116" shortName="precedenti_esami_eseguiti">
+            <implementation shortName="precedenti_esami_eseguiti" markdown="Precedenti Esami Eseguiti"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:31:17">Precedenti Esami Eseguiti</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:31:17">Precedenti Esami Eseguiti</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4117" effectiveDate="2025-05-26T11:34:47" statusCode="draft" lastModifiedDate="2025-05-26T11:35:03" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4117" shortName="codice_dellesame">
+                <implementation shortName="codice_dellesame" markdown="Codice dell'esame"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:35:03">Codice dell'esame</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:35:03">Codice dell'esame</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4117.20250526113447.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4118" effectiveDate="2025-05-26T11:35:11" statusCode="draft" lastModifiedDate="2025-05-26T11:35:25" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4118" shortName="descrizione_dellesame">
+                <implementation shortName="descrizione_dellesame" markdown="Descrizione dell'esame"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:35:25">Descrizione dell'esame</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:35:25">Descrizione dell'esame</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4119" effectiveDate="2025-05-26T11:37:17" statusCode="draft" lastModifiedDate="2025-05-26T11:40:33" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4119" shortName="data_esame">
+                <implementation shortName="data_esame" markdown="Data esame"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:37:26">Data esame</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:37:26">Data esame</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4120" effectiveDate="2025-05-26T11:37:43" statusCode="draft" lastModifiedDate="2025-05-26T11:38:12" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4120" shortName="data_inizio">
+                    <implementation shortName="data_inizio" markdown="Data Inizio"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T11:38:12">Data Inizio</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T11:38:12">Data Inizio</desc>
+                    <valueDomain type="datetime"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4121" effectiveDate="2025-05-26T11:40:21" statusCode="draft" lastModifiedDate="2025-05-26T11:40:33" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4121" shortName="data_fine">
+                    <implementation shortName="data_fine" markdown="Data Fine"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T11:40:33">Data Fine</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T11:40:33">Data Fine</desc>
+                    <valueDomain type="datetime"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4122" effectiveDate="2025-05-26T11:41:07" statusCode="draft" lastModifiedDate="2025-05-26T11:41:32" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4122" shortName="oggetto_correlato">
+                <implementation shortName="oggetto_correlato" markdown="Oggetto Correlato"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:41:32">Oggetto Correlato</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:41:32">Oggetto Correlato</desc>
+                <valueDomain type="complex"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4124" effectiveDate="2025-05-26T11:42:51" statusCode="draft" lastModifiedDate="2025-05-26T11:43:53" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4124" shortName="esame_obiettivo">
+            <implementation shortName="esame_obiettivo" markdown="Esame Obiettivo"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:43:03">Esame Obiettivo</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:43:03">Esame Obiettivo</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4125" effectiveDate="2025-05-26T11:43:09" statusCode="draft" lastModifiedDate="2025-05-26T11:43:21" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4125" shortName="codice_esame">
+                <implementation shortName="codice_esame" markdown="Codice Esame"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:43:21">Codice Esame</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:43:21">Codice Esame</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4125.20250526114309.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4126" effectiveDate="2025-05-26T11:43:35" statusCode="draft" lastModifiedDate="2025-05-26T11:43:53" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4126" shortName="descrizione_esame">
+                <implementation shortName="descrizione_esame" markdown="Descrizione Esame"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:43:53">Descrizione Esame</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:43:53">Descrizione Esame</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4127" effectiveDate="2025-05-26T11:47:12" statusCode="draft" lastModifiedDate="2025-05-26T12:55:17" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4127" shortName="prestazioni">
+            <implementation shortName="prestazioni" markdown="Prestazioni"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:47:25">Prestazioni</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:47:25">Prestazioni</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4128" effectiveDate="2025-05-26T11:47:59" statusCode="draft" lastModifiedDate="2025-05-26T11:48:15" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4128" shortName="codice_prestazione">
+                <implementation shortName="codice_prestazione" markdown="Codice Prestazione"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:48:15">Codice Prestazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:48:15">Codice Prestazione</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4128.20250526114759.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4129" effectiveDate="2025-05-26T11:48:19" statusCode="draft" lastModifiedDate="2025-05-26T11:48:34" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4129" shortName="descrizione_prestazione">
+                <implementation shortName="descrizione_prestazione" markdown="Descrizione Prestazione"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:48:34">Descrizione Prestazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:48:34">Descrizione Prestazione</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4174" effectiveDate="2025-05-26T12:54:34" statusCode="draft" lastModifiedDate="2025-05-26T12:54:52" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4174" shortName="branca">
+                <implementation shortName="branca" markdown="Branca"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:54:52">Branca</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:54:52">Branca</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4174.20250526125434.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4175" effectiveDate="2025-05-26T12:55:02" statusCode="draft" lastModifiedDate="2025-05-26T12:55:17" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4175" shortName="disciplina">
+                <implementation shortName="disciplina" markdown="Disciplina"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:55:17">Disciplina</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:55:17">Disciplina</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4175.20250526125502.0"/>
+                </valueDomain>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4130" effectiveDate="2025-05-26T11:48:46" statusCode="draft" lastModifiedDate="2025-05-26T11:50:09" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4130" shortName="confronto_con_precedenti_esami_eseguiti">
+            <implementation shortName="confronto_con_precedenti_esami_eseguiti" markdown="Confronto Con Precedenti Esami Eseguiti"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:49:26">Confronto Con Precedenti Esami Eseguiti</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:49:26">Confronto Con Precedenti Esami Eseguiti</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4131" effectiveDate="2025-05-26T11:49:41" statusCode="draft" lastModifiedDate="2025-05-26T11:50:09" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4131" shortName="note_e_commenti_precedenti_esami_eseguiti">
+                <implementation shortName="note_e_commenti_precedenti_esami_eseguiti" markdown="Note e Commenti precedenti esami eseguiti"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:50:09">Note e Commenti precedenti esami eseguiti</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:50:09">Note e Commenti precedenti esami eseguiti</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4132" effectiveDate="2025-05-26T11:50:16" statusCode="draft" lastModifiedDate="2025-05-26T11:50:56" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4132" shortName="referto">
+            <implementation shortName="referto" markdown="Referto"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:50:29">Referto</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:50:29">Referto</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4133" effectiveDate="2025-05-26T11:50:41" statusCode="draft" lastModifiedDate="2025-05-26T11:50:56" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4133" shortName="descrizione_referto">
+                <implementation shortName="descrizione_referto" markdown="Descrizione Referto"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:50:56">Descrizione Referto</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:50:56">Descrizione Referto</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4134" effectiveDate="2025-05-26T11:51:35" statusCode="draft" lastModifiedDate="2025-05-26T11:52:30" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4134" shortName="diagnosi">
+            <implementation shortName="diagnosi" markdown="Diagnosi"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:51:44">Diagnosi</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:51:44">Diagnosi</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4135" effectiveDate="2025-05-26T11:51:52" statusCode="draft" lastModifiedDate="2025-05-26T11:52:13" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4135" shortName="codice_diagnosi">
+                <implementation shortName="codice_diagnosi" markdown="Codice Diagnosi"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:52:03">Codice Diagnosi</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:52:03">Codice Diagnosi</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4135.20250526115152.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4136" effectiveDate="2025-05-26T11:52:17" statusCode="draft" lastModifiedDate="2025-05-26T11:52:30" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4136" shortName="descrizione_diagnosi">
+                <implementation shortName="descrizione_diagnosi" markdown="Descrizione Diagnosi"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:52:30">Descrizione Diagnosi</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:52:30">Descrizione Diagnosi</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4137" effectiveDate="2025-05-26T11:52:47" statusCode="draft" lastModifiedDate="2025-05-26T11:53:19" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4137" shortName="conclusioni">
+            <implementation shortName="conclusioni" markdown="Conclusioni"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:53:00">Conclusioni</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:53:00">Conclusioni</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4138" effectiveDate="2025-05-26T11:53:06" statusCode="draft" lastModifiedDate="2025-05-26T11:53:19" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4138" shortName="descrizione_conclusioni">
+                <implementation shortName="descrizione_conclusioni" markdown="Descrizione conclusioni"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:53:19">Descrizione conclusioni</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:53:19">Descrizione conclusioni</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4139" effectiveDate="2025-05-26T11:53:36" statusCode="draft" lastModifiedDate="2025-05-26T11:54:55" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4139" shortName="suggerimenti_per_il_medico_prescrittore">
+            <implementation shortName="suggerimenti_per_il_medico_prescrittore" markdown="Suggerimenti Per Il Medico Prescrittore"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:54:03">Suggerimenti Per Il Medico Prescrittore</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:54:03">Suggerimenti Per Il Medico Prescrittore</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4140" effectiveDate="2025-05-26T11:54:40" statusCode="draft" lastModifiedDate="2025-05-26T11:54:55" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4140" shortName="descrizione_note_medico">
+                <implementation shortName="descrizione_note_medico" markdown="Descrizione note medico"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:54:55">Descrizione note medico</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:54:55">Descrizione note medico</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4140.20250526115440.0"/>
+                </valueDomain>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4141" effectiveDate="2025-05-26T11:55:13" statusCode="draft" lastModifiedDate="2025-05-26T11:56:05" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4141" shortName="accertamenti_e_controlli_consigliati">
+            <implementation shortName="accertamenti_e_controlli_consigliati" markdown="Accertamenti e Controlli Consigliati"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:55:32">Accertamenti e Controlli Consigliati</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:55:32">Accertamenti e Controlli Consigliati</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4142" effectiveDate="2025-05-26T11:55:52" statusCode="draft" lastModifiedDate="2025-05-26T11:56:05" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4142" shortName="descrizione">
+                <implementation shortName="descrizione" markdown="Descrizione"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:56:05">Descrizione</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:56:05">Descrizione</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4143" effectiveDate="2025-05-26T11:58:32" statusCode="draft" lastModifiedDate="2025-05-26T12:34:21" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4143" shortName="terapia_farmacologica_consigliata">
+            <implementation shortName="terapia_farmacologica_consigliata" markdown="Terapia Farmacologica Consigliata"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:58:48">Terapia Farmacologica Consigliata</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:58:48">Terapia Farmacologica Consigliata</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4144" effectiveDate="2025-05-26T11:59:24" statusCode="draft" lastModifiedDate="2025-05-26T11:59:37" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4144" shortName="codice_farmaco">
+                <implementation shortName="codice_farmaco" markdown="Codice Farmaco"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:59:37">Codice Farmaco</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:59:37">Codice Farmaco</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4144.20250526115924.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4145" effectiveDate="2025-05-26T11:59:43" statusCode="draft" lastModifiedDate="2025-05-26T11:59:54" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4145" shortName="descrizione_farmaco">
+                <implementation shortName="descrizione_farmaco" markdown="Descrizione Farmaco"/>
+                <name language="it-IT" lastTranslated="2025-05-26T11:59:54">Descrizione Farmaco</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T11:59:54">Descrizione Farmaco</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4146" effectiveDate="2025-05-26T12:00:05" statusCode="draft" lastModifiedDate="2025-05-26T12:01:26" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4146" shortName="periodo_terapia">
+                <implementation shortName="periodo_terapia" markdown="Periodo Terapia"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:00:23">Periodo Terapia</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:00:23">Periodo Terapia</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4147" effectiveDate="2025-05-26T12:00:38" statusCode="draft" lastModifiedDate="2025-05-26T12:01:02" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4147" shortName="inizio_terapia">
+                    <implementation shortName="inizio_terapia" markdown="Inizio Terapia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:01:02">Inizio Terapia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:01:02">Inizio Terapia</desc>
+                    <valueDomain type="datetime"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4148" effectiveDate="2025-05-26T12:01:11" statusCode="draft" lastModifiedDate="2025-05-26T12:01:26" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4148" shortName="fine_terapia">
+                    <implementation shortName="fine_terapia" markdown="Fine Terapia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:01:26">Fine Terapia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:01:26">Fine Terapia</desc>
+                    <valueDomain type="datetime"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4149" effectiveDate="2025-05-26T12:01:57" statusCode="draft" lastModifiedDate="2025-05-26T12:03:42" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4149" shortName="posologia">
+                <implementation shortName="posologia" markdown="Posologia"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:02:25">Posologia</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:02:25">Posologia</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4150" effectiveDate="2025-05-26T12:02:35" statusCode="draft" lastModifiedDate="2025-05-26T12:03:02" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4150" shortName="codice_periodo_posologia">
+                    <implementation shortName="codice_periodo_posologia" markdown="Codice Periodo Posologia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:03:02">Codice Periodo Posologia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:03:02">Codice Periodo Posologia</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4150.20250526120235.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4151" effectiveDate="2025-05-26T12:03:17" statusCode="draft" lastModifiedDate="2025-05-26T12:03:42" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4151" shortName="descrizione_periodo_posologia">
+                    <implementation shortName="descrizione_periodo_posologia" markdown="Descrizione Periodo Posologia"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:03:42">Descrizione Periodo Posologia</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:03:42">Descrizione Periodo Posologia</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4152" effectiveDate="2025-05-26T12:04:03" statusCode="draft" lastModifiedDate="2025-05-26T12:06:55" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4152" shortName="via_di_somministrazione">
+                <implementation shortName="via_di_somministrazione" markdown="Via di Somministrazione"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:04:26">Via di Somministrazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:04:26">Via di Somministrazione</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4153" effectiveDate="2025-05-26T12:05:03" statusCode="draft" lastModifiedDate="2025-05-26T12:05:25" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4153" shortName="codice">
+                    <implementation shortName="codice" markdown="Codice"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:05:25">Codice</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:05:25">Codice</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4153.20250526120503.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4154" effectiveDate="2025-05-26T12:06:44" statusCode="draft" lastModifiedDate="2025-05-26T12:06:55" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4154" shortName="descrizione">
+                    <implementation shortName="descrizione" markdown="Descrizione"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:06:55">Descrizione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:06:55">Descrizione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4155" effectiveDate="2025-05-26T12:07:18" statusCode="draft" lastModifiedDate="2025-05-26T12:09:34" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4155" shortName="sito_di_amministrazione">
+                <implementation shortName="sito_di_amministrazione" markdown="Sito di Amministrazione"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:07:33">Sito di Amministrazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:07:33">Sito di Amministrazione</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4156" effectiveDate="2025-05-26T12:08:47" statusCode="draft" lastModifiedDate="2025-05-26T12:09:07" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4156" shortName="codice">
+                    <implementation shortName="codice" markdown="Codice"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:09:07">Codice</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:09:07">Codice</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4156.20250526120847.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4157" effectiveDate="2025-05-26T12:09:19" statusCode="draft" lastModifiedDate="2025-05-26T12:09:34" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4157" shortName="descrizione">
+                    <implementation shortName="descrizione" markdown="Descrizione"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:09:34">Descrizione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:09:34">Descrizione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4158" effectiveDate="2025-05-26T12:14:48" statusCode="draft" lastModifiedDate="2025-05-26T12:18:43" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4158" shortName="dose">
+                <implementation shortName="dose" markdown="Dose"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:17:22">Dose</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:17:22">Dose</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4159" effectiveDate="2025-05-26T12:17:56" statusCode="draft" lastModifiedDate="2025-05-26T12:18:23" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4159" shortName="dose_minima">
+                    <implementation shortName="dose_minima" markdown="Dose Minima"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:18:23">Dose Minima</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:18:23">Dose Minima</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4160" effectiveDate="2025-05-26T12:18:27" statusCode="draft" lastModifiedDate="2025-05-26T12:18:43" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4160" shortName="dose_massima">
+                    <implementation shortName="dose_massima" markdown="Dose Massima"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:18:43">Dose Massima</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:18:43">Dose Massima</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4161" effectiveDate="2025-05-26T12:18:58" statusCode="draft" lastModifiedDate="2025-05-26T12:22:12" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4161" shortName="frequenza_di_erogazione">
+                <implementation shortName="frequenza_di_erogazione" markdown="Frequenza di Erogazione"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:19:31">Frequenza di Erogazione</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:19:31">Frequenza di Erogazione</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4162" effectiveDate="2025-05-26T12:21:33" statusCode="draft" lastModifiedDate="2025-05-26T12:21:54" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4162" shortName="frequenza_minima">
+                    <implementation shortName="frequenza_minima" markdown="Frequenza Minima"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:21:54">Frequenza Minima</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:21:54">Frequenza Minima</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4163" effectiveDate="2025-05-26T12:22:01" statusCode="draft" lastModifiedDate="2025-05-26T12:22:12" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4163" shortName="frequenza_massima">
+                    <implementation shortName="frequenza_massima" markdown="Frequenza Massima"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:22:12">Frequenza Massima</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:22:12">Frequenza Massima</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4164" effectiveDate="2025-05-26T12:22:27" statusCode="draft" lastModifiedDate="2025-05-26T12:23:32" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4164" shortName="forma_farmaceutica">
+                <implementation shortName="forma_farmaceutica" markdown="Forma Farmaceutica"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:22:41">Forma Farmaceutica</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:22:41">Forma Farmaceutica</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4165" effectiveDate="2025-05-26T12:22:52" statusCode="draft" lastModifiedDate="2025-05-26T12:23:07" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4165" shortName="codice">
+                    <implementation shortName="codice" markdown="Codice"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:23:07">Codice</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:23:07">Codice</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.63.2.1.4165.20250526122252.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4166" effectiveDate="2025-05-26T12:23:18" statusCode="draft" lastModifiedDate="2025-05-26T12:23:32" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4166" shortName="descrizione">
+                    <implementation shortName="descrizione" markdown="Descrizione"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:23:32">Descrizione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:23:32">Descrizione</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4167" effectiveDate="2025-05-26T12:24:04" statusCode="draft" lastModifiedDate="2025-05-26T12:31:22" type="group" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4167" shortName="prescrittore">
+                <implementation shortName="prescrittore" markdown="Prescrittore"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:24:20">Prescrittore</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:24:20">Prescrittore</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4168" effectiveDate="2025-05-26T12:28:51" statusCode="draft" lastModifiedDate="2025-05-26T12:29:13" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4168" shortName="data_prescrizione">
+                    <implementation shortName="data_prescrizione" markdown="Data Prescrizione"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:29:13">Data Prescrizione</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:29:13">Data Prescrizione</desc>
+                    <valueDomain type="datetime"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4169" effectiveDate="2025-05-26T12:30:01" statusCode="draft" lastModifiedDate="2025-05-26T12:30:21" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4169" shortName="nome_prescrittore">
+                    <implementation shortName="nome_prescrittore" markdown="Nome Prescrittore"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:30:21">Nome Prescrittore</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:30:21">Nome Prescrittore</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4170" effectiveDate="2025-05-26T12:30:35" statusCode="draft" lastModifiedDate="2025-05-26T12:31:22" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4170" shortName="cognome_prescrittore">
+                    <implementation shortName="cognome_prescrittore" markdown="Cognome Prescrittore"/>
+                    <name language="it-IT" lastTranslated="2025-05-26T12:31:22">Cognome Prescrittore</name>
+                    <desc language="it-IT" lastTranslated="2025-05-26T12:31:22">Cognome Prescrittore</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4171" effectiveDate="2025-05-26T12:32:22" statusCode="draft" lastModifiedDate="2025-05-26T12:33:05" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4171" shortName="grammatura">
+                <implementation shortName="grammatura" markdown="Grammatura"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:32:43">Grammatura</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:32:43">Grammatura</desc>
+                <valueDomain type="quantity"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4172" effectiveDate="2025-05-26T12:33:14" statusCode="draft" lastModifiedDate="2025-05-26T12:33:36" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4172" shortName="quantita_nella_confezione">
+                <implementation shortName="quantita_nella_confezione" markdown="Quantità nella confezione"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:33:36">Quantità nella confezione</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:33:36">Quantità nella confezione</desc>
+                <valueDomain type="quantity"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4173" effectiveDate="2025-05-26T12:33:46" statusCode="draft" lastModifiedDate="2025-05-26T12:34:21" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4173" shortName="numero_di_confenzioni">
+                <implementation shortName="numero_di_confenzioni" markdown="Numero di confenzioni"/>
+                <name language="it-IT" lastTranslated="2025-05-26T12:34:21">Numero di confenzioni</name>
+                <desc language="it-IT" lastTranslated="2025-05-26T12:34:21">Numero di confenzioni</desc>
+                <valueDomain type="count"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.63.2.1.4123" effectiveDate="2025-05-26T11:41:46" statusCode="cancelled" lastModifiedDate="2025-05-26T11:42:46" type="item" minimumMultiplicity="0" maximumMultiplicity="1" isMandatory="false" iddisplay="hl7itig-dataelement-4123" shortName="esame_obiettivo">
+            <implementation shortName="esame_obiettivo" markdown="Esame Obiettivo"/>
+            <name language="it-IT" lastTranslated="2025-05-26T11:41:58">Esame Obiettivo</name>
+            <desc language="it-IT" lastTranslated="2025-05-26T11:41:58">Esame Obiettivo</desc>
+            <valueDomain type="string"/>
+        </concept>
+    </concept>
+</dataset>

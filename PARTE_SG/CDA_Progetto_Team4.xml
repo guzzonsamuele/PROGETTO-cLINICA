@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--xmlns="urn:hl7-org:v3" questo è il namespace di default. Dice al computer: "Tutti i tag che trovi in questo documento (come patient, author, id) appartengono al vocabolario ufficiale dello standard HL7 versione 3". Senza questo, il documento non sarebbe riconosciuto come un HL7 CDA valido.
+xmlns:voc="urn:hl7-org:v3/voc": Questo crea un "prefisso" chiamato voc. Viene usato raramente nei documenti semplici, ma serve per richiamare termini specifici da un vocabolario di concetti HL7 senza dover riscrivere tutto l'indirizzo ogni volta.
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale per la validazione. Permette al file XML di "dialogare" con uno schema (un file di regole chiamato XSD) che controlla se hai commesso errori di grammatica XML, come dimenticare un tag obbligatorio o inserire un numero dove dovrebbe esserci del testo.
+-->
+<title> Referto di Televisita </title>
+<effectiveTime value="20260409143000"/>
+<!--data di creazione-->
+<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+<!--Indica la "sicurezza" del referto
+N: livello normale
+2.16.840.1.113883.5.25: codice OID 
+-->
+<language code="it-IT"/>
+<versionNumber value="1" />
+
+    <component>
+        <structuredBody>
+           ...
+        </structuredBody>
+    </component>
+
+</ClinicalDocument>

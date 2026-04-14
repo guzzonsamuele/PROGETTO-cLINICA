@@ -37,12 +37,48 @@ N: livello normale
                 <family nullFlavor="UNK"/>
                 <given nullFlavor="UNK"/>
             </name>
-            <administrativeGenderCode code="{{codoce_sesso}}" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="{{Sesso_parola}}"/>
+            <administrativeGenderCode code="{{codice_sesso}}" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="{{sesso}}"/>
             <birthTime value="{{data_nascita}}0101"/>
             <!--età settate tutte a 01/01/anno perchè la stringa deve essere di 8 caratteri YYYYMMDD-->
+            <birthplace> 
+				<place>
+					<addr>
+						<country nullFlavor="UNK"/>
+						<state nullFlavor="UNK"/>
+						<county nullFlavor="UNK"/> 
+						<city nullFlavor="UNK"/> 
+						<censusTract nullFlavor="UNK"/>
+					</addr>					
+				</place> 
+			</birthplace> 
         </patient>
     </patientRole>
 </recordTarget>
+<author>
+	<time value="{{data_creazione}}"/>
+	<assignedAuthor classCode="ASSIGNED">
+		<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+		<addr use="HP"> 
+			<country>100</country>
+			<state>120</state>
+			<county>RM</county> 
+			<city>Roma</city> 
+			<censusTract>058091</censusTract> 
+			<postalCode>00184</postalCode> 
+			<streetAddressLine>via Milano 7</streetAddressLine> 
+		</addr> 
+		<telecom use="HP" value="mailto:prova.provax@example.com"/> 
+		<telecom use="WP" value="mailto:prova.provax@example.com"/> 
+		<telecom use="MC" value="tel:3340000000"/>
+		<assignedPerson>
+			<name>
+				<family>Test</family>
+				<given>Matteo</given>
+				<prefix>Dott.</prefix>
+			</name>
+		</assignedPerson>
+	</assignedAuthor>
+</author>	
     <component>
         <structuredBody>
            ...

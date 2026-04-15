@@ -4,115 +4,151 @@
 xmlns:voc="urn:hl7-org:v3/voc": Questo crea un "prefisso" chiamato voc. Viene usato raramente nei documenti semplici, ma serve per richiamare termini specifici da un vocabolario di concetti HL7 senza dover riscrivere tutto l'indirizzo ogni volta.
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale per la validazione. Permette al file XML di "dialogare" con uno schema (un file di regole chiamato XSD) che controlla se hai commesso errori di grammatica XML, come dimenticare un tag obbligatorio o inserire un numero dove dovrebbe esserci del testo.
 -->
-<realmCode code="IT"/>
-<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
-<templateId root="2.16.840.1.113883.2.9.10.1.16.1.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
-<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="{{id_paziente}}" assigningAuthorityName="Ospedale di ricerca Unibo - FFACS"/>
-<code code="75496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Telehealth note"/>
-<title> Referto di Televisita </title>
-<effectiveTime value="{{data_creazione}}"/>
-<!--data di creazione-->
-<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
-<!--Indica la "sicurezza" del referto
-N: livello normale
-2.16.840.1.113883.5.25: codice OID-->
+	<realmCode code="IT"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+	<templateId root="2.16.840.1.113883.2.9.10.1.16.1.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
+	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="{{id_paziente}}" assigningAuthorityName="Ospedale di ricerca Unibo - FFACS"/>
+	<code code="75496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Telehealth note"/>
+	<title> Referto di Televisita </title>
+	<effectiveTime value="{{data_creazione}}"/>
+	<!--data di creazione-->
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+	<!--Indica la "sicurezza" del referto
+	N: livello normale
+	2.16.840.1.113883.5.25: codice OID-->
 
-<language code="it-IT"/>
-<versionNumber value="{{versione}}" />
-<recordTarget>
-    <patientRole>
-        <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="{{id_paziente}}" assigningAuthorityName="Ospedale di ricerca Unibo - FFACS"/>
-        <!--codice id e ospedale fittizio-->
-        <addr use="H">
-            <country nullFlavor="UNK"/>
-            <state nullFlavor="UNK"/>
-            <county nullFlavor="UNK"/>
-            <city nullFlavor="UNK"/>
-            <postalCode nullFlavor="UNK"/>
-            <streetAdressLine nullFlavor="UNK"/>
-        </addr>
-        <telecom nullFlavor="UNK"/>
-        <patient>
-            <name>
-                <family nullFlavor="UNK"/>
-                <given nullFlavor="UNK"/>
-            </name>
-            <administrativeGenderCode code="{{codice_sesso}}" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="{{sesso}}"/>
-            <birthTime value="{{data_nascita}}0101"/>
-            <!--età settate tutte a 01/01/anno perchè la stringa deve essere di 8 caratteri YYYYMMDD-->
-            <birthplace> 
-				<place>
-					<addr>
-						<country nullFlavor="UNK"/>
-						<state nullFlavor="UNK"/>
-						<county nullFlavor="UNK"/> 
-						<city nullFlavor="UNK"/> 
-						<censusTract nullFlavor="UNK"/>
-					</addr>					
-				</place> 
-			</birthplace> 
-        </patient>
-    </patientRole>
-</recordTarget>
-<!-- perchè è indicato che può essercene solo uno -->
-<author>
-	<time value="{{data_creazione}}"/>
-	<assignedAuthor classCode="ASSIGNED">
-		<assignedPerson>
-			<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
-			<!-- 2.16.840.1.113883.2.9.2.120.4.4 codice OID identificativo dell autore, in questo caso la struttura sanitaria.
-			l medico è identificato tramite il suo Codice Fiscale, e l'autorità che certifica la validità del Codice Fiscale in Italia è 
-			il Ministero dell'Economia e delle Finanze (MEF) attraverso il Sistema Tessera Sanitaria.-->
-			<name>
-				<family>Guzzon</family>
-				<given>Samuele</given>
-			</name>
-		</assignedPerson>
-	</assignedAuthor>
-</author>
-
-<custodian>
-	<assignedCustodian>
-		<representedCustodianOrganization>
-			<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
-			<name>
-				<family>Guzzon</family>
-				<given>Samuele</given>
-			</name>
-		</representedCustodianOrganization>
-	</assignedCustodian>
-</custodian>	
-
-<legalAuthenticator>
-	<time value="{{data_creazione}}"/>
-	<signatureCode code="S"/>
-		<assignedEntity>
-			<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
+	<language code="it-IT"/>
+	<versionNumber value="{{versione}}" />
+	<recordTarget>
+		<patientRole>
+			<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="{{id_paziente}}" assigningAuthorityName="Ospedale di ricerca Unibo - FFACS"/>
+			<!--codice id e ospedale fittizio-->
+			<addr use="H">
+				<country nullFlavor="UNK"/>
+				<state nullFlavor="UNK"/>
+				<county nullFlavor="UNK"/>
+				<city nullFlavor="UNK"/>
+				<postalCode nullFlavor="UNK"/>
+				<streetAdressLine nullFlavor="UNK"/>
+			</addr>
+			<telecom nullFlavor="UNK"/>
+			<patient>
+				<name>
+					<family nullFlavor="UNK"/>
+					<given nullFlavor="UNK"/>
+				</name>
+				<administrativeGenderCode code="{{codice_sesso}}" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="{{sesso}}"/>
+				<birthTime value="{{data_nascita}}0101"/>
+				<!--eta' settate tutte a 01/01/anno perche' la stringa deve essere di 8 caratteri YYYYMMDD-->
+				<birthplace> 
+					<place>
+						<addr>
+							<country nullFlavor="UNK"/>
+							<state nullFlavor="UNK"/>
+							<county nullFlavor="UNK"/> 
+							<city nullFlavor="UNK"/> 
+							<censusTract nullFlavor="UNK"/>
+						</addr>					
+					</place> 
+				</birthplace> 
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<!-- perche' e' indicato che pue' essercene solo uno -->
+	<author>
+		<time value="{{data_creazione}}"/>
+		<assignedAuthor classCode="ASSIGNED">
 			<assignedPerson>
+				<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
+				<!-- 2.16.840.1.113883.2.9.2.120.4.4 codice OID identificativo dell autore, in questo caso la struttura sanitaria.
+				il medico e' identificato tramite il suo Codice Fiscale, e l'autorita' che certifica la validita' del Codice Fiscale in Italia e' 
+				il Ministero dell'Economia e delle Finanze (MEF) attraverso il Sistema Tessera Sanitaria.-->
 				<name>
 					<family>Guzzon</family>
 					<given>Samuele</given>
 				</name>
 			</assignedPerson>
-		</assignedEntity>
-</legalAuthenticator>	
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
+				<name>
+					<family>Guzzon</family>
+					<given>Samuele</given>
+				</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>	
+	<legalAuthenticator>
+		<time value="{{data_creazione}}"/>
+		<signatureCode code="S"/>
+			<assignedEntity>
+				<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
+				<assignedPerson>
+					<name>
+						<family>Guzzon</family>
+						<given>Samuele</given>
+					</name>
+				</assignedPerson>
+			</assignedEntity>
+	</legalAuthenticator>	
+	<inFulfillmentOf> 
+		<order classCode="ACT" moodCode="RQO"> 
+			<id root="2.16.840.1.113883.2.9.4.3.9" extension="{{id_paziente}}" assigningAuthorityName="MEF"/> 
+			<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="Normale"/>
+		</order> 
+	</inFulfillmentOf> 	
+	<!-- 2.16.840.1.113883.2.9.4.3.9 e' l'OID specifico che identifica il Sistema di Accoglienza Centrale (SAC) del MEF per le ricette elettroniche.
+	R: Sta per "Routine" (Normale). E' la scelta standard per esami di monitoraggio come quelli del Parkinson.
+	extension: andrebbe il codice della ricetta, in questo caso usiamo l'id del paziente per identificare il referto.
+	-->
+	<componentOf>
+	<encompassingEncounter>
+		<id root="2.16.840.1.113883.2.9.2.120110.4.6" extension="VISITA_{{ id_paziente }}" />
+		<effectiveTime>
+		<low value="{{ data_inizio_test }}"/>
+		<high value="{{ data_fine_test }}"/>
+		</effectiveTime>
+		<location>
+		<healthCareFacility>
+			<location>
+			<name>Laboratorio di Bioingegneria - Universita'</name>
+			</location>
+			</healthCareFacility>
+		</location>
+	</encompassingEncounter>
+	</componentOf>
 
-<inFulfillmentOf> 
-	<order classCode="ACT" moodCode="RQO"> 
-		<id root="2.16.840.1.113883.2.9.4.3.9" extension="{{id_paziente}}" assigningAuthorityName="MEF"/> 
-		<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="Normale"/>
-	</order> 
-</inFulfillmentOf> 	
-<!-- 2.16.840.1.113883.2.9.4.3.9 è l'OID specifico che identifica il Sistema di Accoglienza Centrale (SAC) del MEF per le ricette elettroniche.
-R: Sta per "Routine" (Normale). È la scelta standard per esami di monitoraggio come quelli del Parkinson.
-extension: andrebbe il codice della ricetta, in questo caso usiamo l'id del paziente per identificare il referto.
--->
-
-
-    <component>
-        <structuredBody>
-           ...
-        </structuredBody>
-    </component>
-
+	<component>
+		<structuredBody  moodCode="EVN" classCode="DOCBODY">
+		<!--classCode="DOCBODY": Dice al computer che questo blocco è ufficialmente il "corpo del documento".
+		moodCode="EVN": (Event) Indica che ciò che stai scrivendo sono fatti accaduti (es. "il paziente ha camminato a questa velocità"). 
+		Se fosse un ordine per un esame futuro, il codice sarebbe diverso.-->
+			<component typeCode="COMP">
+				<section ID="QUESITO_DIAGNOSTICO">
+					<code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
+					<!--29299-5 identificativo LOINC per "motivo della visita"
+					2.16.840.1.113883.6.1 codice OID per indicare che il codice precedente è LOINC-->
+					<title> Quesito diagnostico </title>
+					<text> 
+						<paragraph> 
+							Valutazione del cammino in pazienti affetti dal Morbo di Parkinson.
+						</paragraph> 
+					</text> 
+					<entry> 
+						<observation classCode="OBS" moodCode="EVN"> 
+						<!--OBS: Specifica che stiamo facendo un'osservazione
+						CD : Significa Coded Concept. Stai dicendo che il valore non è un numero (come l'altezza) ma un concetto preso da un vocabolario medico.
+						-->
+							<code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
+							<value xsi:type="CD" code="332.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="MORBO DI PARKINSON">
+							</value>
+						</observation> 
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
 </ClinicalDocument>

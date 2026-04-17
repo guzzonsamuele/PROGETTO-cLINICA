@@ -128,6 +128,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 		Se fosse un ordine per un esame futuro, il codice sarebbe diverso.-->
 			<component typeCode="COMP">
 				<section ID="QUESITO_DIAGNOSTICO">
+					<templateId root="2.16.840.1.113883.3.1937.777.63.10.648"/>
 					<code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
 					<!--29299-5 identificativo LOINC per "motivo della visita"
 					2.16.840.1.113883.6.1 codice OID per indicare che il codice precedente è LOINC-->
@@ -147,6 +148,19 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 							</value>
 						</observation> 
 					</entry>
+				</section>
+			</component>
+			<component typeCode="COMP">
+				<section ID="STORIA CLINICA">
+					<templateId root="2.16.840.1.113883.3.1937.777.63.10.649"/>
+					<code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale"/>
+					<title> Storia clinica </title>
+					<text>
+						<paragraph>
+						Paziente di {{eta_paziente}} anni, peso {{peso_paziente}} kg e altezza {{altezza_paziente}} cm.
+						Paziente ha {{anni_diagnosi}} anni diagnosi e il Parkinson e allo stadio Hoehn e Yahr {{ HoehnYahr }}.
+						Stato della terapia: {{medicazione}}.
+						</paragraph>						
 				</section>
 			</component>
 		</structuredBody>

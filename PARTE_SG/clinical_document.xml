@@ -60,7 +60,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 		<assignedAuthor classCode="ASSIGNED">
 			<assignedPerson>
 				<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
-				<!-- 2.16.840.1.113883.2.9.2.120.4.4 codice OID identificativo dell autore, in questo caso la struttura sanitaria.
+				<!-- 2.16.840.1.113883.2.9.4.3.2" codice OID identificativo dell autore, in questo caso la struttura sanitaria.
 				il medico e' identificato tramite il suo Codice Fiscale, e l'autorita' che certifica la validita' del Codice Fiscale in Italia e' 
 				il Ministero dell'Economia e delle Finanze (MEF) attraverso il Sistema Tessera Sanitaria.-->
 				<name>
@@ -130,7 +130,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 				<section ID="QUESITO_DIAGNOSTICO">
 					<templateId root="2.16.840.1.113883.3.1937.777.63.10.648"/>
 					<code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
-					<!--29299-5 identificativo LOINC per "motivo della visita"
+					<!--29299-5 identificativo LOINC per il PANEL "motivo della visita" 
 					2.16.840.1.113883.6.1 codice OID per indicare che il codice precedente è LOINC-->
 					<title> Quesito diagnostico </title>
 					<text> 
@@ -145,6 +145,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 						modo univoco al morbo di parkinson
 						-->
 							<code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
+							<!-- 29298-7 codice per la singola domanda "motivo della visita"-->	
 							<value xsi:type="CD" code="332.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="MORBO DI PARKINSON">
 							</value>
 						</observation> 

@@ -231,7 +231,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 										<td>s</td>
 									</tr>
 									<tr>
-										<td>Velocità media del cammino</td>
+										<td>Velocita media del cammino</td>
 										<td>{{ Gait_Velocity }}</td>
 										<td>m/s</td>
 									</tr>
@@ -254,6 +254,31 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 							<code code="80456-7" codeSystem="2.16.840.1.113883.6.1" displayName="Timed up and go test"/>
 							<statusCode code="completed"/>
 							<value xsi:type="PQ" value="{{ Tug_Time }}" unit="s"/>
+						</observation>
+					</entry>
+					<!-- PQ : physical quantity -->
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="52543-6" codeSystem="2.16.840.1.113883.6.1" displayName="Velocita media del cammino"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Gait_velocity }}" unit="m/s"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="66440-9" codeSystem="2.16.840.1.113883.6.1" displayName="Cadenza"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Cadenza }}" unit="/min"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="66433-4" codeSystem="2.16.840.1.113883.6.1" displayName="Lunghezza falcata"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Lunghezza_falcata }}" unit="m"/>
 						</observation>
 					</entry>
 

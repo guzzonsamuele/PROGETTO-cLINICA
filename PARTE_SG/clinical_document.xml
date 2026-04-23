@@ -141,7 +141,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 					<entry> 
 						<observation classCode="OBS" moodCode="EVN"> 
 						<!--OBS: Specifica che stiamo facendo un'osservazione
-						CD : Significa Coded Concept. Stai dicendo che il valore non è un numero (come l'altezza) ma un concetto preso da un vocabolario medico.
+						CD : Significa Coded Concept. Stai dicendo che il valore non è un numero (come l'altezza) ma un concetto preso da un vocabolario medico che indirizza in 
+						modo univoco al morbo di parkinson
 						-->
 							<code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
 							<value xsi:type="CD" code="332.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="MORBO DI PARKINSON">
@@ -160,9 +161,106 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 						Paziente di {{eta_paziente}} anni, peso {{peso_paziente}} kg e altezza {{altezza_paziente}} cm.
 						Paziente ha {{anni_diagnosi}} anni diagnosi e il Parkinson e allo stadio Hoehn e Yahr {{ HoehnYahr }}.
 						Stato della terapia: {{medicazione}}.
-						</paragraph>						
+						</paragraph>
+					<text/>
+					<entry>
+						<observation moodCode="EVN" classCode="OBS">
+							<code code="21612-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Eta'"/>  
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{eta_paziente}}" unit="a"/> 
+							<!-- PQ indica physical quntity richiede value e unit-->
+        				</observation>
+					<entry/>
+
+					<entry>
+						<observation moodCode="EVN" classCode="OBS">
+							<code code="29463-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Peso"/>  
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{peso_paziente}}" unit="kg"/> 
+        				</observation>
+					<entry/>
+
+					<entry>
+						<observation moodCode="EVN" classCode="OBS">
+							<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Altezza"/>  
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{altezza_paziente}}" unit="cm"/> 
+        				</observation>
+					<entry/>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="60783-8" codeSystem="2.16.840.1.113883.6.1" displayName="Punteggio sulla scala di Hoehn and Yahr"/>
+							<value xsi:type="INT" value="{{ HoennYahr }}"/>
+						</observation>
+					</entry>
+					<!-- INT indica che il dato sara un intero-->
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="Storia delle medicazioni"/>
+							<value xsi:type="ST">{{ Medicazione }}</value>
+						</observation>
+					</entry>
+					<!-- ST sta per stringa di testo-->
 				</section>
 			</component>
+
+			<component typeCode="COMP" contextConductionInd='True'>
+				<section>
+					<templateId root="2.16.840.1.113883.3.1937.777.63.10.669"/>
+					<code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Osservazioni fisiche"/>
+					<title> Esame Obbiettivo </title>
+					<text>
+						<paragraph>
+							Si esegue valutazione della mobilità funzionale tramite TUG test (Timed Up and Go).
+							I risultati sono riportati nella tabella seguente:
+						</paragraph>
+						<table>
+							<table border="1" width="100%">
+								<thead>
+									<tr>
+										<th>Parametro / Test</th>
+										<th>Valore Rilevato</th>
+										<th>Unità</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Timed Up and Go (TUG)</td>
+										<td>{{ Tug_Time }}</td>
+										<td>s</td>
+									</tr>
+									<tr>
+										<td>Velocità media del cammino</td>
+										<td>{{ Gait_Velocity }}</td>
+										<td>m/s</td>
+									</tr>
+									<tr>
+										<td>Cadenza</td>
+										<td>{{ Cadenza }}</td>
+										<td>passi/min</td>
+									</tr>
+									<tr>
+										<td>Lunghezza della falcata</td>
+										<td>{{ Lunghezza_falcata }}</td>
+										<td>m</td>
+									</tr>
+								</tbody>
+						</table>	
+					</text>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="80456-7" codeSystem="2.16.840.1.113883.6.1" displayName="Timed up and go test"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Tug_Time }}" unit="s"/>
+						</observation>
+					</entry>
+
+				</section>
+			</component>
+
+
 		</structuredBody>
 	</component>
 </ClinicalDocument>

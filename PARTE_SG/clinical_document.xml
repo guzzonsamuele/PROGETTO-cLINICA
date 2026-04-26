@@ -191,7 +191,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<code code="60783-8" codeSystem="2.16.840.1.113883.6.1" displayName="Punteggio sulla scala di Hoehn and Yahr"/>
+							<code code="77714-4" codeSystem="2.16.840.1.113883.6.1" displayName="Punteggio sulla scala di Hoehn and Yahr modificato"/>
 							<value xsi:type="INT" value="{{ HoennYahr }}"/>
 						</observation>
 					</entry>
@@ -252,7 +252,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<code code="80456-7" codeSystem="2.16.840.1.113883.6.1" displayName="Timed up and go test"/>
+							<code code="89423-8" codeSystem="2.16.840.1.113883.6.1" displayName="Timed up and go test"/>
 							<statusCode code="completed"/>
 							<value xsi:type="PQ" value="{{ Tug_Time }}" unit="s"/>
 						</observation>
@@ -261,7 +261,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<code code="52543-6" codeSystem="2.16.840.1.113883.6.1" displayName="Velocita media del cammino"/>
+							<code code="83144-6" codeSystem="2.16.840.1.113883.6.1" displayName="Velocita media del cammino"/>
 							<statusCode code="completed"/>
 							<value xsi:type="PQ" value="{{ Gait_velocity }}" unit="m/s"/>
 						</observation>
@@ -282,10 +282,285 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance": Questo è fondamentale pe
 							<value xsi:type="PQ" value="{{ Lunghezza_falcata }}" unit="m"/>
 						</observation>
 					</entry>
-
 				</section>
 			</component>
 
+			<component typeCode="COMP" contextConductionInd='True'>
+				<section classCode='DOCSET' moodCode='EVN'>
+					<code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Interventi"/>
+						<title> Prestazioni </title>
+						<text>
+							<paragraph>
+								<caption>Prestazioni Eseguite</caption>
+							</paragraph>
+							<list>
+								<item ID="Prestazione-1">
+									<table>
+										<thead>
+											<tr>
+												<th>Prestazione 1</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Codice Prestazione</th>
+												<td>89423-8</td>
+											</tr>
+											<tr>
+												<th>Descrizione Prestazione eseguita</th>
+												<td>Timed Up and Go Test</td>
+											</tr>
+											<tr>
+												<th>Data Prestazione eseguita</th>
+												<td>{{data_creazione}}</td>
+											</tr>
+										</tbody>
+									</table>
+									<paragraph>
+										<caption>Procedure Operative Eseguite</caption>
+									</paragraph>
+									<list>
+										<item ID="Procedure-1">
+											<table border = "1">
+												<thead>
+													<tr>
+														<th colspan="2">Procedura 1</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>Codice Prestazione Eseguita</th>
+														<td>62387-6</td>
+													</tr>
+													<tr>
+														<th>Codice Procedura Operativa</th>
+														<td>89423-8</td>
+													</tr>
+													<tr>
+														<th>Descrizione Procedura Operativa</th>
+														<td>Valutazione strumentale del cammino tramite sensori indossabili.</td>
+													</tr>
+													<tr>
+														<th>Quantità</th>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>Modalità esecuzione procedura operativa</th>
+														<td>TUG test</td>
+													</tr>
+													<tr>
+														<th>Strumentazione utilizzata</th>
+														<tr>
+															Sistema integrato composto da:
+															<ul>
+																<li>13 Sensori inerziali  MTw (Movella/Xsens MTw Awinda) in corrispondenza di:
+																centro della fronte, sterno, L4 e L5, polso destro e sinistro, coscia destra e sinistra, stinco destro e 
+																sinistro, caviglia destra e sinistra e dorso del piede destro e sinistro.</li>
+																<li> 2 solette sensorizzate per analisi pressioni plantari (Moticon OpenGo).</li>
+																<li>Pedana baropodometrica per analisi statica e dinamica (ProtoKinetics Zeno™).</li>
+															</ul>
+														</tr>
+													</tr>
+													<tr>
+														<th>Parametri descrittivi della procedura</th>
+														<td>Analisi dei parametri spazio-temporali (velocità, cadenza, lunghezze).</td>
+													</tr>
+												</tbody>
+											</table>
+										</item>
+									</list>
+								</item>
+							</list>
+						</text>
+						<entry>
+							<procedure classCode="PROC" moodCode="EVN">
+								<code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Analisi del cammino"/>					
+								<statusCode code="completed"/>				
+								<effectiveTime value="{{data_creazione}}"/>	
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="LowerBack"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - L4/L5"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="R_Wrist"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - polso destro"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="L_Wrist"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - polso sinistro"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="R_MidLatThigh"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - coscia destra"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="R_LatShank"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - stinco destro"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="L_LatShank"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - stinco sinistro"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="R_DorsalFoot"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - dorso piede destro"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="L_DorsalFoot"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - dorso piede sinistro"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="R_Ankle"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - caviglia destra"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="L_Ankle"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - caviglia sinistra"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="Xiphoid"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - sterno"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="Forehead"/>
+										<playingDevice>
+											<code displayName="Sensore Inerziale - fronte"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="Linsole"/>
+										<playingDevice>
+											<code displayName="Solette sensorizzate sinistra"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="Rinsole"/>
+										<playingDevice>
+											<code displayName="Solette sensorizzate destra"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+
+								<participant typeCode="DEV">
+									<participantRole classCode="ROL">
+										<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="BARO_PLATFORM"/>
+										<playingDevice>
+											<code displayName="Pedana baropodometrica"/>
+										</playingDevice>
+									</participantRole>
+								</participant>
+							</procedure>
+						</entry>
+					</section>
+				</component>
+
+				<component typeCode="COMP">
+					<section ID="REFERTO">
+						<code code="47045-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto"/>
+						<title>Referto</title>
+						<text>
+							<paragraph>
+								[Questo paragrafo contiene una descrizione testuale del 
+								referto]
+							</paragraph>
+						</text>
+					</section>
+				</component>
+			
+				<component typeCode="COMP">
+					<section ID="DIAGNOSI">
+						<code code="29548-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi"/>
+						<title> Diagnosi </title>
+						<text> 
+							<list> 
+								<item> 
+									<content ID="DIAG1">[Diagnosi]</content> 
+								</item> 
+							</list> 
+						</text>
+						<entry> 
+							<observation classCode="OBS" moodCode="EVN"> 
+								<code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi"/>
+								<value xsi:type="CD" code="790.21" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="ALTERAZIONI DEL TEST RAPIDO DELLA GLICEMIA"/>
+							</observation> 
+						</entry>
+					</section>
+				</component>
+				<component typeCode="COMP">
+					<section ID="CONCLUSIONI">
+						<code code="55110-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Conclusioni"/>
+						<title> Conclusioni </title>
+						<text>
+							<paragraph>
+								[Questo paragrafo contiene una descrizione testuale delle 
+								conclusioni]
+							</paragraph>
+						</text>
+					</section>
+				</component>
 
 		</structuredBody>
 	</component>

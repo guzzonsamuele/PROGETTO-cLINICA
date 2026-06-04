@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<realmCode code="IT"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<templateId root="2.16.840.1.113883.2.9.10.1.16.1.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
+	<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{id_paziente}}" assigningAuthorityName="Ospedale di ricerca Unibo - FFACS"/>
+	<code code="75496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Telehealth note"/>
+	<title> Referto di Televisita </title>
+	<effectiveTime value="{{data_creazione}}"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+	<languageCode code="it-IT"/>
+	<versionNumber value="{{versione}}" />
+	<recordTarget>
+		<patientRole>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{id_paziente}}" assigningAuthorityName="Ospedale di ricerca Unibo - FFACS"/>
+			<addr use="H">
+				<country nullFlavor="UNK"/>
+				<state nullFlavor="UNK"/>
+				<county nullFlavor="UNK"/>
+				<city nullFlavor="UNK"/>
+				<postalCode nullFlavor="UNK"/>
+				<streetAddressLine nullFlavor="UNK"/>
+			</addr>
+			<telecom nullFlavor="UNK"/>
+			<patient>
+				<name>
+					<family nullFlavor="UNK"/>
+					<given nullFlavor="UNK"/>
+				</name>
+				<administrativeGenderCode code="{{codice_sesso}}" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="{{sesso}}"/>
+				<birthTime value="{{data_nascita}}0101"/>
+				<birthplace> 
+					<place>
+						<addr>
+							<country nullFlavor="UNK"/>
+							<state nullFlavor="UNK"/>
+							<county nullFlavor="UNK"/> 
+							<city nullFlavor="UNK"/> 
+							<censusTract nullFlavor="UNK"/>
+						</addr>					
+					</place> 
+				</birthplace> 
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="{{data_creazione}}"/>
+		<assignedAuthor classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
+			<assignedPerson>
+				<name>
+					<family>Guzzon</family>
+					<given>Samuele</given>
+				</name>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{partita_iva}}" assigningAuthorityName="MEF"/>
+				<name>	FACCS HOSPITAL 	</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>	
+	<legalAuthenticator>
+		<time value="{{data_creazione}}"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_1}}" assigningAuthorityName="MEF"/>
+			<assignedPerson>
+				<name>
+					<family>Guzzon</family>
+					<given>Samuele</given>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</legalAuthenticator>	
+	<inFulfillmentOf> 
+		<order classCode="ACT" moodCode="RQO"> 
+			<id root="2.16.840.1.113883.2.9.4.3.9" extension="{{id_paziente}}" assigningAuthorityName="MEF"/> 
+			<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="Normale"/>
+		</order> 
+	</inFulfillmentOf> 	
+	<componentOf>
+	<encompassingEncounter>
+		<id root="2.16.840.1.113883.2.9.2.120110.4.6" extension="VISITA_{{ id_paziente }}" />
+		<effectiveTime>
+		<low value="{{ data_inizio_test }}"/>
+		<high value="{{ data_fine_test }}"/>
+		</effectiveTime>
+		<location>
+		<healthCareFacility>
+			<location>
+			<name>Laboratorio di Bioingegneria - Universita'</name>
+			</location>
+			</healthCareFacility>
+		</location>
+	</encompassingEncounter>
+	</componentOf>
+
+	<component>
+		<structuredBody  moodCode="EVN" classCode="DOCBODY">
+			<component typeCode="COMP">
+				<section ID="QUESITO_DIAGNOSTICO">
+					<templateId root="2.16.840.1.113883.3.1937.777.63.10.648"/>
+					<code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
+					<title> Quesito diagnostico </title>
+					<text> 
+						<paragraph> 
+							Valutazione del cammino in pazienti affetti dal Morbo di Parkinson.
+						</paragraph> 
+					</text> 
+					<entry> 
+						<observation classCode="OBS" moodCode="EVN"> 
+							<code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
+							<value xsi:type="CD" code="332.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="MORBO DI PARKINSON">
+							</value>
+						</observation> 
+					</entry>
+				</section>
+			</component>
+			<component typeCode="COMP">
+				<section ID="STORIA_CLINICA">
+					<templateId root="2.16.840.1.113883.3.1937.777.63.10.649"/>
+					<code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale"/>
+					<title> Storia clinica </title>
+					<text>
+						<paragraph>
+						Paziente di {{eta_paziente}} anni, peso {{peso_paziente}} kg e altezza {{altezza_paziente}} cm.
+						Paziente ha {{anni_diagnosi}} anni di diagnosi e il Parkinson e allo stadio Hoehn e Yahr {{ HoehnYahr }}.
+						Stato della terapia: {{medicazione}}.
+						</paragraph>
+					</text>
+					<entry>
+						<observation moodCode="EVN" classCode="OBS">
+							<code code="21612-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Eta'"/>  
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{eta_paziente}}" unit="a"/> 
+        				</observation>
+					</entry>
+
+					<entry>
+						<observation moodCode="EVN" classCode="OBS">
+							<code code="29463-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Peso"/>  
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{peso_paziente}}" unit="kg"/> 
+        				</observation>
+					</entry>
+
+					<entry>
+						<observation moodCode="EVN" classCode="OBS">
+							<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Altezza"/>  
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{altezza_paziente}}" unit="cm"/> 
+        				</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="77714-4" codeSystem="2.16.840.1.113883.6.1" displayName="Punteggio sulla scala di Hoehn and Yahr modificato"/>
+							<value xsi:type="REAL" value="{{ HoehnYahr }}"/>
+						</observation>
+					</entry>
+				
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="Storia delle medicazioni"/>
+							<value xsi:type="ST">
+								{{ Medicazione }}
+							</value>
+						</observation>
+					</entry>
+				</section>
+			</component>
+
+			<component typeCode="COMP" contextConductionInd='true'>
+				<section>
+					<templateId root="2.16.840.1.113883.3.1937.777.63.10.669"/>
+					<code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Osservazioni fisiche"/>
+					<title> Esame Obbiettivo </title>
+					<text>
+						<paragraph>
+							Si esegue valutazione della mobilità funzionale tramite tre tipologie di test: TUG, Self-Paced e Hurried-Paced.
+							I risultati sono riportati nella tabella seguente:
+						</paragraph>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Test</th>
+									<th>Durata camminata</th>
+									<th>Velocita media del cammino</th>
+									<th>Cadenza</th>
+									<th>Lunghezza falcata</th>
+									<th>ASI_WALK</th>
+									<th>ASI_TURN</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Timed Up and Go (TUG)</td>
+									<td>{{ Walk_Time_TUG }} s</td>
+									<td>{{ Gait_Velocity_TUG }} m/s</td>
+									<td>{{ Cadenza_TUG }} passi/min</td>
+									<td>{{ Lunghezza_falcata_TUG }} m</td>
+									<td>{{ASI_WALK_TUG}} %</td>
+									<td>{{ASI_TURN_TUG}} %</td>
+								</tr>
+								<tr>
+									<td>Self-Paced walk (SP) </td>
+									<td>{{ Walk_Time_SP }} s</td>
+									<td>{{ Gait_Velocity_SP }} m/s</td>
+									<td>{{ Cadenza_SP }} passi/min</td>
+									<td>{{ Lunghezza_falcata_SP }} m</td>
+									<td>{{ASI_WALK_SP}} %</td>
+									<td>{{ASI_TURN_SP}} %</td>
+								</tr>
+								<tr>
+									<td>Hurried-Paced walk (HP)</td>
+									<td>{{ Walk_Time_HP }} s</td>
+									<td>{{ Gait_Velocity_HP }} m/s</td>
+									<td>{{ Cadenza_HP }} passi/min</td>
+									<td>{{ Lunghezza_falcata_HP }} m</td>
+									<td>{{ASI_WALK_HP}} %</td>
+									<td>{{ASI_TURN_HP}} %</td>
+								</tr>
+							</tbody>
+						</table>	
+					</text>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="89423-8" 
+								codeSystem="2.16.840.1.113883.6.1" 
+								displayName="Tempo camminata (TUG)"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Walk_Time_TUG }}" unit="s"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="83144-6" codeSystem="2.16.840.1.113883.6.1" displayName="Velocità media (TUG)"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Gait_Velocity_TUG }}" unit="m/s"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_001" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Cadenza media"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Cadenza_TUG }}" unit="passi/min"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_002" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Lunghezza falcata media"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Lunghezza_falcata_TUG }}" unit="m"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ASI_WALK_TUG }}" unit="%"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ASI_TURN_TUG }}" unit="%"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="89423-8" 
+								codeSystem="2.16.840.1.113883.6.1" 
+								displayName="Tempo camminata (SP)"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Walk_Time_SP }}" unit="s"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="83144-6" codeSystem="2.16.840.1.113883.6.1" displayName="Velocita media del cammino (SP)"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Gait_Velocity_SP }}" unit="m/s"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_001" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Cadenza media"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Cadenza_SP }}" unit="passi/min"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_002" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Lunghezza falcata media"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Lunghezza_falcata_SP }}" unit="m"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ASI_WALK_SP }}" unit="%"/>
+						</observation>
+					</entry>
+					
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ASI_TURN_SP }}" unit="%"/>
+						</observation>
+					</entry>
+
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="89423-8"
+								codeSystem="2.16.840.1.113883.6.1" 
+								displayName="Tempo camminata (HP)"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Walk_Time_HP }}" unit="s"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="83144-6" codeSystem="2.16.840.1.113883.6.1" displayName="Velocita media del cammino (HP)"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Gait_Velocity_HP }}" unit="m/s"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_001" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Cadenza media"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Cadenza_HP }}" unit="passi/min"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_002" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Lunghezza falcata media"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ Lunghezza_falcata_HP }}" unit="m"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ASI_WALK_HP }}" unit="%"/>
+						</observation>
+					</entry>
+
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+							<statusCode code="completed"/>
+							<value xsi:type="PQ" value="{{ASI_TURN_HP }}" unit="%"/>
+						</observation>
+					</entry>
+
+				</section>
+			</component>
+
+			<component typeCode="COMP" contextConductionInd='true'>
+				<section classCode='DOCSECT' moodCode='EVN'>
+					<code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Interventi"/>
+					<title> Prestazioni </title>
+					<text>
+						<paragraph>
+							<caption>Prestazioni Eseguite</caption>
+						</paragraph>
+						<list>
+							<item ID="Prestazione-1">
+								<table>
+									<thead>
+										<tr><th colspan="2">Prestazione 1</th></tr>
+									</thead>
+									<tbody>
+										<tr><th>Codice Prestazione</th><td>89423-8</td></tr>
+										<tr><th>Descrizione</th><td>Timed Up and Go Test</td></tr>
+										<tr><th>Data</th><td>{{data_creazione}}</td></tr>
+									</tbody>
+								</table>
+							</item>
+
+							<item ID="Prestazione-2">
+								<table>
+									<thead>
+										<tr><th colspan="2">Prestazione 2</th></tr>
+									</thead>
+									<tbody>
+										<tr><th>Codice Prestazione</th><td>83144-6</td></tr>
+										<tr><th>Descrizione</th><td>Self-Paced Walk Test</td></tr>
+										<tr><th>Data</th><td>{{data_creazione}}</td></tr>
+									</tbody>
+								</table>
+							</item>
+
+							<item ID="Prestazione-3">
+								<table>
+									<thead>
+										<tr><th colspan="2">Prestazione 3</th></tr>
+									</thead>
+									<tbody>
+										<tr><th>Codice Prestazione</th><td>83144-6</td></tr>
+										<tr><th>Descrizione</th><td>Hurried-Paced Walk Test</td></tr>
+										<tr><th>Data</th><td>{{data_creazione}}</td></tr>
+									</tbody>
+								</table>
+							</item>
+						</list>
+
+						<paragraph>
+							<caption>Procedure Operative Eseguite</caption>
+						</paragraph>
+						<list>
+							<item ID="Procedure-Generale">
+								<table border="1">
+									<thead>
+										<tr><th colspan="2">Dettagli Tecnici e Strumentazione</th></tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>Codice Studio</th>
+											<td>62387-6 (Gait analysis study)</td>
+										</tr>
+										<tr>
+											<th>Descrizione</th>
+											<td>Valutazione multimodale del cammino e dell'equilibrio.</td>
+										</tr>
+										<tr>
+											<th>Strumentazione utilizzata</th>
+											<td>
+												Sistema integrato composto da:
+												<list>
+													<item>13 Sensori inerziali MTw Awinda (Movella) posizionati su: fronte, sterno, L4/L5, polsi, cosce, stinchi, caviglie e dorso piedi.</item>
+													<item>2 Solette sensorizzate Moticon OpenGo per pressioni plantari.</item>
+													<item>Pedana baropodometrica ProtoKinetics Zeno™.</item>
+												</list>
+											</td>
+										</tr>
+										<tr>
+											<th>Parametri analizzati</th>
+											<td>Velocità, cadenza, lunghezza del passo e tempi di esecuzione.</td>
+										</tr>
+									</tbody>
+								</table>
+							</item>
+						</list>
+					</text>
+					<entry>
+						<procedure classCode="PROC" moodCode="EVN">
+							<code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Analisi del cammino"/>					
+							<statusCode code="completed"/>				
+							<effectiveTime value="{{data_creazione}}"/>	
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="LowerBack"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - L4/L5"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="R_Wrist"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - polso destro"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="L_Wrist"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - polso sinistro"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="R_MidLatThigh"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - coscia destra"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="R_MidLatThigh"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - coscia sinistra"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="R_LatShank"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - stinco destro"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="L_LatShank"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - stinco sinistro"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="R_DorsalFoot"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - dorso piede destro"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="L_DorsalFoot"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - dorso piede sinistro"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="R_Ankle"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - caviglia destra"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="L_Ankle"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - caviglia sinistra"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="Xiphoid"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - sterno"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="Forehead"/>
+									<playingDevice>
+										<code displayName="Sensore Inerziale - fronte"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="Linsole"/>
+									<playingDevice>
+										<code displayName="Solette sensorizzate sinistra"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="Rinsole"/>
+									<playingDevice>
+										<code displayName="Solette sensorizzate destra"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+
+							<participant typeCode="DEV">
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="BARO_PLATFORM"/>
+									<playingDevice>
+										<code displayName="Pedana baropodometrica"/>
+									</playingDevice>
+								</participantRole>
+							</participant>
+						</procedure>
+					</entry>
+				</section>
+			</component>
+			<component typeCode="COMP">
+				<section ID="REFERTO">
+					<code code="47045-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto"/>
+					<title>Referto e Conclusioni Diagnostiche (WearGait-PD ML)</title>
+					<text>
+						<paragraph>
+							Sulla base dell'analisi dei parametri spazio-temporali estratti dai sensori inerziali e dalle pedane, i dati sono stati elaborati tramite il modello di Machine Learning predittivo e confrontati con la diagnosi clinica presente a sistema.
+						</paragraph>
+						<table border="1">
+							<thead>
+								<tr>
+									<th colspan="3">Risultato Modello di Classificazione vs Diagnosi Reale</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Tipo di analisi</th>
+									<td><content styleCode="Bold">Random Forest</content></td>
+									<td><content styleCode="Bold">Diagnosi Reale</content></td>
+								</tr>
+								<tr>
+									<th>Classe Predetta / Stato</th>
+									<td><content styleCode="Bold">{{ Predizione_ML }}</content></td>
+									<td><content styleCode="Bold">{{ diagnosi_paziente }}</content></td>
+								</tr>
+								<tr>
+									<th>Livello di Confidenza</th>
+									<td>{{ Probabilita_ML }} %</td>
+									<td align="center">-</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+
+					<entry typeCode="DRIV">
+						<organizer classCode="BATTERY" moodCode="EVN">
+							<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="BATTERY_WEARGAIT_001"/>							
+							<code code="LOCAL_CODE_004" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Risultati analisi computer"/>							
+							<statusCode code="completed"/>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="ID_PREDIZIONE_ML_001"/>
+									<code code="LOCAL_CODE_005" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Risultati analisi computer"/>
+									<statusCode code="completed"/>									
+									<value xsi:type="CE" code="CODICE_PREDIZIONE" codeSystem="2.16.840.1.113883.2.9.2.120.4.5" displayName="{{ Predizione_ML }}"/>									
+									<methodCode code="RF" codeSystem="2.16.840.1.113883.2.9.2.120.4.6" displayName="Random Forest Classifier"/>									
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="ID_PROBABILITA_ML_001"/>
+											<code code="74019-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Probabilita di sviluppare la malattia"/>
+											<statusCode code="completed"/>
+											<value xsi:type="PQ" value="{{ Probabilita_ML }}" unit="%"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="ID_DIAGNOSI_REALE_001"/>
+									<code code="29548-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi"/>
+									<statusCode code="completed"/>
+									
+									<value xsi:type="CE" code="CODICE_DIAGNOSI_REALE" codeSystem="2.16.840.1.113883.6.103" displayName="{{ diagnosi_paziente }}"/>
+									
+									<interpretationCode code="G" codeSystem="2.16.840.1.113883.5.83" displayName="Ground Truth / Gold Standard"/>
+								</observation>
+							</component>
+
+						</organizer>
+					</entry>
+					
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

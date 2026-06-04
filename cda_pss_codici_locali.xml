@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:sdtc="urn:hl7-org:sdtc" 
+                  xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"> 
+    <realmCode code="IT"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/> 
+    <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+    <templateId root="2.16.840.1.113883.2.9.10.1.4.1.1" extension="2024-04-09T155518"/>
+    <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="PSS-2023-001" assigningAuthorityName="Regione Emilia Romagna"/>
+    <code code="60591-5" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC" 
+          displayName="Profilo Sanitario Sintetico"/>
+
+    <title>Profilo Sanitario Sintetico</title>
+
+    <effectiveTime value="20231027103000+0200"/>
+
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="it-IT"/>
+
+    <setId root="2.16.840.1.113883.2.9.2.99.4.4" extension="{{ id_documento }}"/>
+  
+    <versionNumber value="{{versione}}"/>
+    
+    
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="{{id_paziente}}"/>
+        
+            <addr use="H">  
+                <country nullFlavor="UNK"/>
+                <city nullFlavor="UNK"/>
+                <censusTract nullFlavor="UNK"/>
+                <postalCode nullFlavor="UNK"/>
+                <streetAddressLine nullFlavor="UNK"/>
+            </addr>
+            <patient>
+                <name>
+                    <given nullFlavor="UNK"/>
+                    <family nullFlavor="UNK"/>
+                </name>
+            
+                <administrativeGenderCode code="{{sesso}}" 
+                                      codeSystem="2.16.840.1.113883.5.1"/>
+            
+                <birthTime value="{{data_nascita}}"/>
+            </patient>
+        </patientRole>          
+    </recordTarget>
+
+    <author> 
+        <time value="{{data_creazione}}"/>
+     
+        <assignedAuthor>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_2}}"/>       
+        
+            <assignedPerson> 
+                <name>
+                    <family>Belsanti</family>
+                    <given>Claudia</given>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+
+    <dataEnterer>
+    <time value="{{data_creazione}}"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_2}}"/>
+            <assignedPerson>
+                <name>
+                    <family>Belsanti</family>
+                    <given>Claudia</given>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </dataEnterer>
+
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="{{partita_iva}}" assigningAuthorityName="MEF"/>     
+              <name> FACCS HOSPITAL </name>                       
+                <addr nullFlavor="UNK"/>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+
+
+    <legalAuthenticator>
+        <time value="{{data_creazione}}"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="{{codice_fiscale_autore_2}}"/>
+
+            <assignedPerson>
+                <name>
+                    <family>Belsanti</family>
+                    <given>Claudia</given>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </legalAuthenticator>
+
+    
+    <documentationOf>
+        <serviceEvent classCode="MPROT">
+            <id root="2.16.840.1.113883.2.9.2.99.1.2" extension="syn52540892"/>        
+            <code code="44.01.1" codeSystem="2.16.840.1.113883.2.9.2.99.4.1" displayName="Monitoraggio andatura tramite sensori indossabili"/> 
+            <effectiveTime>
+            <low value="{{data_inizio_test}}"/> 
+            <high value="{{data_fine_test}}"/> 
+            </effectiveTime>
+        
+        </serviceEvent>
+    </documentationOf>
+
+    <component>
+        <structuredBody>
+            <component> 
+                <section>
+                    <templateId root="2.16.840.1.113883.2.9.10.1.4.2.2"/>
+                    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ALLERGIE E/O REAZIONI AVVERSE"/>
+                    <title>Allergie e/o Reazioni Avverse</title>
+            
+            <text>
+                <paragraph>Informazioni non disponibili su allergie nei dati dello studio WearGait-PD</paragraph>
+            </text>
+
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.2.1"/>
+                            
+                            <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="ALL_UNK_001"/>
+                            
+                            <code nullFlavor="NA"/> 
+                            <statusCode code="active"/>
+                            
+                            <effectiveTime>
+                                <low nullFlavor="UNK"/> 
+                            </effectiveTime> 
+                            <entryRelationship typeCode="SUBJ">
+                            
+                                <observation classCode="OBS" moodCode="EVN">
+                            
+                                    <code code="160244002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="No known allergies"/>
+                             
+                                    <value xsi:type="CE" nullFlavor="UNK"/>
+                                
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.2.9.10.1.4.2.11"/>  
+                    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="TERAPIA FARMACOLOGICA"/>
+               
+                    <title>Terapia Farmacologica</title>
+                
+                    <text>
+                        <paragraph ID="PHARM_INFO">Informazioni sulla terapia farmacologica non disponibili nei dati dello studio WearGait-PD.</paragraph>
+                    </text>
+
+                    <entry>
+                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.11.1"/>
+                        
+                            <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="PHARM_UNK_001"/>
+                        
+                        
+                            <statusCode code="active"/>
+                        
+                            <effectiveTime xsi:type="IVL_TS"> 
+                                <low nullFlavor="UNK"/> 
+                            </effectiveTime>
+                        
+                            <routeCode nullFlavor="NA"/> 
+                            <doseQuantity nullFlavor="NA"/> 
+
+                            <consumable>
+                                <manufacturedProduct classCode="MANU"> 
+                                    <manufacturedMaterial>
+                                        <code code="182904002" 
+                                            codeSystem="2.16.840.1.113883.6.96" 
+                                            codeSystemName="SNOMED CT" 
+                                            displayName="Drug treatment unknown"/>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.2.9.10.1.4.2.1"/>
+                    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="LISTA DEI PROBLEMI"/>
+                    
+                    <title>Lista dei Problemi / Diagnosi</title>
+                
+                    <text> 
+                        <paragraph>Diagnosi rilevate al momento dell'arruolamento nello studio:</paragraph>
+                        <table border="1" width="100%"> 
+                            <thead>
+                                <tr>
+                                    <th>Problema/Diagnosi</th> 
+                                    <th>Codice (ICD-10)</th>
+                                    <th>Stato</th>
+                                    <th>Stadio</th>                               
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID="PROB_DESC_1">Malattia di Parkinson</td> 
+                                    <td>G20</td>   
+                                    <td>Attivo</td>
+                                    <td ID="PROB_STAGE_1">Stadio {{HoehnYahr}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <paragraph>Nota: Non sono disponibili ulteriori informazioni anamnestiche su patologie concomitanti nei dati di ricerca forniti.</paragraph>
+                    </text>
+
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                        <templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.1"/>
+                            <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="CONC_G20_001"/>
+                            <code nullFlavor="NA"/>
+                            <statusCode code="active"/>
+                            
+                            <effectiveTime>
+                                <low value="{{data_diagnosi}}"/> 
+                            </effectiveTime>
+                        
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.2"/>
+                                    <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="OBS_G20_001"/>
+                                
+                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problema"/>
+                
+                                    <text>
+                                        <reference value="#PROB_DESC_1"/>
+                                    </text>
+                                
+                                    <statusCode code="completed"/>
+
+                                    <effectiveTime>
+                                        <low value="{{data_diagnosi}}"/> 
+                                    </effectiveTime>
+                                
+                                    <value xsi:type="CD" 
+                                            code="G20" 
+                                            codeSystem="2.16.840.1.113883.6.3" 
+                                            codeSystemName="ICD-10" 
+                                            displayName="Malattia di Parkinson"/>
+
+                                <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    
+                                    <observation classCode="OBS" moodCode="EVN">
+                                        <templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.2"/>
+                    
+                                        <code code="385356007" codeSystem="2.16.840.1.113883.6.96" displayName="Stadio della malattia"/>
+                                        
+                                        <text>
+                                            <reference value="#PROB_STAGE_1"/>  
+                                        </text>
+                                        
+                                        <statusCode code="completed"/>
+
+                                        <value xsi:type="CD" 
+                                            code="385356007"
+                                            codeSystem="2.16.840.1.113883.6.96" > 
+                                            
+                                            <originalText>Paziente ID: {{id_paziente}} - Stadio: {{HoehnYahr}}</originalText>
+                                        
+                                        </value>   
+                                    </observation> 
+                                </entryRelationship>                       
+                                </observation>                             
+                            </entryRelationship>                                         
+                        </act>
+                    </entry>
+                </section>
+            </component>
+
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.2.9.10.1.4.2.15"/>
+                   
+                    <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ANAMNESI FAMILIARE"/>
+                    <title>Anamnesi Familiare</title>
+                
+                    <text>
+                        <paragraph ID="FAM_HIST_UNK">Informazioni sull'anamnesi familiare non disponibili nel dataset WearGait-PD.</paragraph>
+                    </text>
+
+                    <entry>
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.15.1"/>
+                            <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="FAM_HIST_UNK_001"/>
+                           
+                            <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/>
+                        
+                            <statusCode code="completed"/>
+                        
+                            <subject>
+                                <relatedSubject classCode="PRS">
+                                    <code nullFlavor="UNK"/>
+                                   
+                                </relatedSubject>
+                            </subject>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                               
+                                    <templateId root="2.16.840.1.113883.2.9.10.1.4.3.15.2"/> 
+                                    <code nullFlavor="NA"/>
+                                    <statusCode code="completed"/>
+                                    <value xsi:type="CD" 
+                                    code="422432008" 
+                                    codeSystem="2.16.840.1.113883.6.96" 
+                                    codeSystemName="SNOMED CT" 
+                                    displayName="Family history unknown"/>
+                                 
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+
+
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.2.9.10.1.4.2.9"/>
+                    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PARAMETRI VITALI"/>
+
+                    <title>Parametri Vitali</title>
+                
+                    <text>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Parametro</th>
+                                    <th>Valore Rilevato</th>
+                                    <th>Unità di Misura</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID="VIT_1">Altezza</td>
+                                    <td>{{altezza_paziente}}</td> <td>cm</td>
+                                </tr>
+                                <tr>
+                                    <td ID="VIT_2">Peso corporeo</td>
+                                    <td>{{peso_paziente}}</td> <td>kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.9.1"/>
+                           
+                            <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="VIT_ALT_001"/>
+                            <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Altezza"/>
+                            
+                            <text><reference value="#VIT_1"/></text>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="{{altezza_paziente}}" unit="cm"/>
+                        </observation>
+                    </entry>
+
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.9.1"/>
+                            
+                            <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="VIT_PESO_001"/>
+                            
+                            <code code="29463-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Peso corporeo"/>
+                            
+                            <text><reference value="#VIT_2"/></text>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="{{peso_paziente}}" unit="kg"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.2.9.10.1.4.2.13"/>
+                    
+                    <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="DISPOSITIVI MEDICI"/>
+                    
+                    <title>Protesi, Ausili e Dispositivi Medici</title>
+                
+                    <text>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Ausilio</th>
+                                    <th>Codice</th>
+                                    <th>Utilizzo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID="DEV_1">Bastone per deambulazione</td> 
+                                    <td>31130007</td>
+                                    <td>Utilizzato durante il TUG test</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+
+                    <entry>
+                        <supply classCode="SPLY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.13.1"/>
+                            <id root="2.16.840.1.113883.2.9.2.99.1.5" extension="DEV_BASTONE_001"/>
+                        
+                            <statusCode code="completed"/>
+                        
+                            <participant typeCode="PRD">
+                                <participantRole classCode="MANU">
+                                    <playingDevice>
+                                        <code code="31130007" 
+                                            codeSystem="2.16.840.1.113883.6.96" 
+                                            codeSystemName="SNOMED CT" 
+                                            displayName="Walking cane"/>
+                                            
+                                    </playingDevice>
+                                </participantRole>
+                            </participant>
+                        </supply>
+                    </entry>
+                </section>            
+            </component>
+
+            <component>
+                <section>
+
+                    <templateId root="2.16.840.1.113883.2.9.10.1.4.2.7"/>
+                    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RISULTATI ESAMI DIAGNOSTICI"/>
+                    
+                    <title>Risultati test cammino e diagnostica </title>
+                    
+                    <text>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Test Eseguito</th>
+                                    <th>Durata cammino</th>
+                                    <th>Lunghezza Falcata</th>   
+                                    <th>Cadenza</th>   
+                                    <th>Velocità media</th>
+                                    <th>ASI_WALK</th>
+									<th>ASI_TURN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Timed Up and Go (TUG)</td> 
+                                    <td>{{Walk_Time_TUG}} s</td>
+                                    <td>{{Lunghezza_falcata_TUG}} m </td>
+                                    <td>{{Cadenza_TUG}} passi/min</td>
+                                    <td>{{Gait_Velocity_TUG}} m/s</td>
+                                    <td>{{ASI_WALK_TUG}} %</td>
+									<td>{{ASI_TURN_TUG}} %</td>
+                                </tr> 
+                                <tr>
+                                    
+                                    <td>Self-paced Walk</td>
+                                    <td>{{Walk_Time_SP}} s</td>
+                                    <td>{{Lunghezza_falcata_SP}} m </td>
+                                    <td>{{Cadenza_SP}} passi/min</td>
+                                    <td>{{Gait_Velocity_SP}} m/s</td>
+                                    <td>{{ASI_WALK_SP}} %</td>
+									<td>{{ASI_TURN_SP}} %</td>
+                                </tr>
+                                <tr>
+                                    <td>Hurried-paced Walk</td>
+                                    <td>{{Walk_Time_HP}} s</td>
+                                    <td>{{Lunghezza_falcata_HP}} m </td>
+                                    <td>{{Cadenza_HP}} passi/min</td>
+                                    <td>{{Gait_Velocity_HP}} m/s</td>
+                                    <td>{{ASI_WALK_HP}} %</td>
+									<td>{{ASI_TURN_HP}} %</td>
+                                </tr>
+                            </tbody>
+                        </table>                        
+                    </text>
+
+                    <entry>
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.7.1"/>
+                           
+                            <code code="89423-8" codeSystem="2.16.840.1.113883.6.1" displayName="Timed Up and Go test"/>
+                            <statusCode code="completed"/>                            
+                            
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="89423-8" codeSystem="2.16.840.1.113883.6.1" displayName="Durata del cammino"/>
+                                    <value xsi:type="PQ" value="{{Walk_Time_TUG}}" unit="s"/> 
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="83144-6" codeSystem="2.16.840.1.113883.6.1" displayName="Velocità media"/>
+                                    <value xsi:type="PQ" value="{{Gait_Velocity_TUG}}" unit="m/s"/>
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_001" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Cadenza media"/>
+                                    <value xsi:type="PQ" value="{{Cadenza_TUG}}" unit="passi/min"/>
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_002" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Lunghezza falcata media"/>
+                                    <value xsi:type="PQ" value="{{Lunghezza_falcata_TUG}}" unit="m"/>
+                                </observation>
+                            </component>
+
+                            
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+                                    <value xsi:type="PQ" value="{{ASI_WALK_TUG}}" unit="%"/> 
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+                                    <value xsi:type="PQ" value="{{ASI_TURN_TUG}}" unit="%"/> 
+                                </observation>
+                            </component>
+
+                        </organizer>
+                    </entry>
+
+
+                    <entry>
+                        <organizer classCode="CLUSTER" moodCode="EVN"> 
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.7.1"/>
+                            <code code="82292-4" codeSystem="2.16.840.1.113883.6.1" displayName="Self paced test"/>
+                            <statusCode code="completed"/>                            
+                        
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="103133-1" codeSystem="2.16.840.1.113883.6.1" displayName="Durata del cammino"/>
+                                    <value xsi:type="PQ" value="{{Walk_Time_SP}}" unit="s"/> 
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="82290-8" codeSystem="2.16.840.1.113883.6.1" displayName="Velocità media"/>
+                                    <value xsi:type="PQ" value="{{Gait_Velocity_SP}}" unit="m/s"/>
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_001" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Cadenza media"/>
+                                    <value xsi:type="PQ" value="{{Cadenza_SP}}" unit="passi/min"/>
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_002" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Lunghezza falcata media"/>
+                                    <value xsi:type="PQ" value="{{Lunghezza_falcata_SP}}" unit="m"/>
+                                </observation>
+                            </component>
+
+                           <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+                                    <value xsi:type="PQ" value="{{ASI_WALK_SP}}" unit="%"/> 
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+                                    <value xsi:type="PQ" value="{{ASI_TURN_SP}}" unit="%"/> 
+                                </observation>
+                            </component>
+
+                        </organizer>
+                    </entry>
+
+
+                    <entry>
+                        <organizer classCode="CLUSTER" moodCode="EVN"> 
+                            <templateId root="2.16.840.1.113883.2.9.10.1.4.3.7.1"/>
+                                <code code="82295-7" codeSystem="2.16.840.1.113883.6.1" displayName="Hurried pace test"/>
+                                <statusCode code="completed"/>                            
+                    
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="103133-1" codeSystem="2.16.840.1.113883.6.1" displayName="Durata del cammino"/>
+                                    <value xsi:type="PQ" value="{{Walk_Time_HP}}" unit="s"/> 
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="82290-8" codeSystem="2.16.840.1.113883.6.1" displayName="Velocità media"/>
+                                    <value xsi:type="PQ" value="{{Gait_Velocity_HP}}" unit="m/s"/>
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_001" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Cadenza media"/>
+                                    <value xsi:type="PQ" value="{{Cadenza_HP}}" unit="passi/min"/>
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_002" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Lunghezza falcata media"/>
+                                    <value xsi:type="PQ" value="{{Lunghezza_falcata_SP}}" unit="m"/>
+                                </observation>
+                            </component>
+                            
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+                                    <value xsi:type="PQ" value="{{ASI_WALK_HP}}" unit="%"/> 
+                                </observation>
+                            </component>
+
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="LOCAL_CODE_003" codeSystem="2.16.840.1.113883.2.9.2.999.1.5" codeSystemName="FFACS_GaitCodes" displayName="Indice ASI"/>
+                                    <value xsi:type="PQ" value="{{ASI_TURN_HP}}" unit="%"/> 
+                                </observation>
+                            </component>                           
+                        </organizer>
+                    </entry>
+                </section>
+            </component> <!--chiuso il blocco sui test diagnostici-->                              
+        </structuredBody> <!--chiudo il corpo-->
+    </component>
+</ClinicalDocument>	<!-- si chiude il documento clinico-->
